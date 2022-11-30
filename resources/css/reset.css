@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+html{}
+body{position:relative; padding:0; background:#fff; font:13px 'NBG'; color:#333; overflow-x:hidden !important; -webkit-text-size-adjust:100%}
+
+img{vertical-align:top}
+img,a img,fieldset,iframe{border:0 none}
+li, ol {list-style:none;}
+table, td{border-collapse:collapse}
+
+textarea,select{overflow:auto;margin:0;padding:0;background-color:#fff;font-family:'NBG'; color:#333;vertical-align:middle;}
+textarea {padding:10px; resize:none}
+select {border:1px solid #999}
+a{color:#757575;text-decoration:none; cursor:pointer;}
+caption, legend{width:0;height:0;font-size:0;color:transparent;line-height:0}
+.IR{display:none;width:0;height:0;font-size:0;color:transparent;line-height:0}
+.blockIR{display:block;width:0;height:0;font-size:0;color:transparent;line-height:0}
+input[type='radio'], input[type='checkbox']{border:none}
+input{-webkit-appearance: none;font-family:'NBG';font-size:1em;color:#333;vertical-align:middle;}
+input[type='text'] {border:1px solid #999}
+input.inputText { padding-left:5px; height:28px; border:1px solid #ccc; border-radius:3px;}
+input.inputText:hover,
+input.inputText:hover { border:1px solid #b54500; background:#f4f4f4; color:#333}
+input[type='submit'] {}
+input[type='submit']:hover {}
+
+.inp1{width:393px; height:18px; padding:5px 0 5px 5px;}
+
+button{cursor:pointer;border:none;background:none;}
+.fl { float:left; }
+.fr { float:right; }
+
+::-webkit-input-placeholder {color:#838383; font-size:12px;}
+::-moz-placeholder {color:#838383; font-size:12px;;}
+:-ms-input-placeholder { color:#838383; font-size:12px;}
+:-moz-placeholder {color:#838383; font-size:12px;}
+
+
+/* 湲��옄�옄瑜닿린 */
+/* overflow:hidden;width:100%;white-space:nowrap;text-overflow:ellipsis */ 
+
+/*
+input[type='checkbox'] { position:relative; top:5px; width:18px; height:18px; background:url('https://www.welchon.com/web/resources/images/check_off.png') no-repeat; -webkit-appearance:none; -webkit-border-radius:0px; }
+input[type='checkbox']:checked { width:18px; height:18px; background:url('https://www.welchon.com/web/resources/images/check_on.png') no-repeat; }
+*/
+
+
+/* base */
+#wrap{margin:0 auto;width:100%}
+
+/* margin, padding, border, nobg */
+.p0{padding:0 !important; overflow:hidden}
+.p20{padding:20px !important; overflow:hidden}
+.pT0{padding-top:0 !important; overflow:hidden}
+.pT20{padding-top:20px !important; overflow:hidden}
+.pT120{padding-top:120px !important; overflow:hidden}
+.pL0{padding-left:0 !important; overflow:hidden}
+.pB10{padding-bottom:10px !important; overflow:hidden}
+
+.b0{border:none !important; overflow:hidden}
+.bT0{border-top:none !important; overflow:hidden}
+.bL0{border-left:0 !important; overflow:hidden}
+.bR0{border-right:0 !important; overflow:hidden}
+.bB0{border-bottom:0 !important; overflow:hidden}
+.bT1{border-top:1px solid #d9d9d9 !important; overflow:hidden}
+.bB1{border-bottom:1px solid #eee !important; overflow:hidden}
+
+.mT0{margin-top:0 !important; overflow:hidden}
+.mT5{margin-top:5px !important; overflow:hidden}
+.mT10{margin-top:10px !important; overflow:hidden}
+.mT15{margin-top:15px !important; overflow:hidden}
+.mT20{margin-top:20px !important; overflow:hidden}
+.mT25{margin-top:25px !important; overflow:hidden}
+.mT30{margin-top:30px !important; overflow:hidden}
+.mT40{margin-top:40px !important; overflow:hidden}
+.mT45{margin-top:45px !important; overflow:hidden}
+.mT50{margin-top:50px !important; overflow:hidden}
+.mT55{margin-top:55px !important; overflow:hidden}
+.mT60{margin-top:60px !important; overflow:hidden}
+.mT65{margin-top:65px !important; overflow:hidden}
+.mT70{margin-top:70px !important; overflow:hidden}
+.mT80{margin-top:80px !important; overflow:hidden}
+.mT85{margin-top:85px !important; overflow:hidden}
+.mT90{margin-top:90px !important; overflow:hidden}
+.mT95{margin-top:95px !important; overflow:hidden}
+.mT100{margin-top:100px !important; overflow:hidden}
+.mT105{margin-top:105px !important; overflow:hidden}
+.mT110{margin-top:110px !important; overflow:hidden}
+.mT120{margin-top:120px !important; overflow:hidden}
+.mT130{margin-top:130px !important; overflow:hidden}
+.mT140{margin-top:140px !important; overflow:hidden}
+.mT145{margin-top:145px !important; overflow:hidden}
+.mT150{margin-top:150px !important; overflow:hidden}
+.mT155{margin-top:155px !important; overflow:hidden}
+.mT160{margin-top:160px !important; overflow:hidden}
+.mT165{margin-top:165px !important; overflow:hidden}
+.mT170{margin-top:170px !important; overflow:hidden}
+.mT180{margin-top:180px !important; overflow:hidden}
+.mT185{margin-top:185px !important; overflow:hidden}
+.mT190{margin-top:190px !important; overflow:hidden}
+.mT200{margin-top:200px !important; overflow:hidden}
+
+.mR0{margin-right:0 !important; overflow:hidden}
+.mR5{margin-right:5px !important; overflow:hidden}
+.mR10{margin-right:10px !important; overflow:hidden}
+.mR15{margin-right:15px !important; overflow:hidden}
+.mR20{margin-right:20px !important; overflow:hidden}
+.mR30{margin-right:30px !important; overflow:hidden}
+.mR40{margin-right:40px !important; overflow:hidden}
+.mR50{margin-right:50px !important; overflow:hidden}
+.mR60{margin-right:60px !important; overflow:hidden}
+.mR70{margin-right:70px !important; overflow:hidden}
+.mR80{margin-right:80px !important; overflow:hidden}
+.mR90{margin-right:90px !important; overflow:hidden}
+.mR100{margin-right:100px !important; overflow:hidden}
+
+.mB0{margin-bottom:0 !important; overflow:hidden}
+.mB5{margin-bottom:5px !important; overflow:hidden}
+.mB10{margin-bottom:10px !important; overflow:hidden}
+.mB15{margin-bottom:15px !important; overflow:hidden}
+.mB25{margin-bottom:25px !important; overflow:hidden}
+.mB20{margin-bottom:20px !important; overflow:hidden}
+.mB30{margin-bottom:30px !important; overflow:hidden}
+.mB40{margin-bottom:40px !important; overflow:hidden}
+.mB45{margin-bottom:45px !important; overflow:hidden}
+.mB50{margin-bottom:50px !important; overflow:hidden}
+.mB55{margin-bottom:55px !important; overflow:hidden}
+.mB60{margin-bottom:60px !important; overflow:hidden}
+.mB70{margin-bottom:70px !important; overflow:hidden}
+.mB80{margin-bottom:80px !important; overflow:hidden}
+.mB90{margin-bottom:90px !important; overflow:hidden}
+.mB100{margin-bottom:100px !important; overflow:hidden}
+
+.mL0{margin-left:0 !important; overflow:hidden}
+.mL5{margin-left:5px !important; overflow:hidden}
+.mL10{margin-left:10px !important; overflow:hidden}
+.mL15{margin-left:15px !important; overflow:hidden}
+.mL20{margin-left:20px !important; overflow:hidden}
+.mL30{margin-left:30px !important; overflow:hidden}
+.mL40{margin-left:40px !important; overflow:hidden}
+.mL50{margin-left:50px !important; overflow:hidden}
+.mL60{margin-left:60px !important; overflow:hidden}
+.mL70{margin-left:70px !important; overflow:hidden}
+.mL80{margin-left:80px !important; overflow:hidden}
+.mL90{margin-left:90px !important; overflow:hidden}
+.mL100{margin-left:100px !important; overflow:hidden}
+
+.nobg{background:none !important; overflow:hidden}
+.clear{clear:both !important; overflow:hidden}
+.txtL{text-align:left !important; overflow:hidden}
+.txtC{text-align:center !important; overflow:hidden}
+.txtR{text-align:right !important; overflow:hidden}
+.inline{display:inline !important; overflow:hidden}
+.clearfix{}
+.clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0}
+/* 
+.btn { background-color:#6e6e6e; color:#fff; font-size:12px; padding:3px 5px; border:0; cursor: pointer}
+ */
+.fNormal { font-weight:normal; }
+.fBold { font-weight:bold; }
+
+.cRed { color:red; }
+.cgreen { color:green; }
+.cBlue { color:blue; }
+.cGray { color:gray; }

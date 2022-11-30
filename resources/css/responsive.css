@@ -1,0 +1,709 @@
+/* top footer 占쏙옙占쏙옙占� css */
+
+@media screen and (max-width:1200px) {
+	/* 占쏙옙占쏙옙占� 占쏙옙占� 占쌨댐옙 */
+	#header{height:85px; background:none;}
+	.h_wrap{width:auto;}
+	.top_wrap {width:auto; top:0; background:none; border:none;}
+	.pageNavWrap { margin:0px 0 30px}
+	.top_wrap.mobile { height:100%;}
+	.utilnGnbWrap{margin-top:0;}
+	.btn_nav2 { display:block; float:left; margin:15px 0px 15px 10px;}
+	.btn_nav2.close { margin-left:15px; }
+	.btn_nav2.close{display:none;}
+	.btn_nav3 { display:none; float:right; margin:15px 0 15px; }
+	.btn_nav2 img,.btn_nav3 img { width:53px}
+	.gnb_wrap .submenu { width:auto; margin:0px; padding:0px; }
+    .btnAreaSreach { display:none}
+
+	.con_wrap { width:96%;}
+	.mainBanner .mBannerConWrap { width:96%; margin:0 2%;}
+	.mainBanner .bx-controls-direction .bx-prev{left:10px;}
+	.mainBanner .bx-controls-direction .bx-next{right:10px;}
+	.mainBanner .bxslider li .l,
+	.mainBanner .bxslider li .r{display:none;}
+	.logo { float:none; display:block; position:absolute; top:7px; left:50%; margin:0 0 0 -90px; z-index:0;}
+	.logo a {margin:0px; }
+	.mo_btn_search { display:block; }
+	.footerWrapCn .footerSlideWrap .footerSlideWrap2,
+	.footerWrapCn .footerUtilWrap { width:100%}
+	
+	.bottomList > div{width:auto; padding:0 3% 3%;}
+	.bottomList .banner{float:none; width:485px; margin:50px auto 0 auto;}
+	.bottomList .banner:after{display:block; content:""; clear:both;}
+	.bottomList .banner .tit{float:left; height:171px; padding:0 17px 38px; margin:27px 40px 0 0; background:url(../images/main/travelBg.gif) center bottom no-repeat; text-align:center;}
+	.bottomList .banner .tit p:first-child{margin-bottom:26px; font-size:28px;}
+	.bottomList .banner .tit p.mobile{display:block; margin:0; font-size:16px; font-family:"NGB"; color:#555;}
+	.bottomList .banner .tit p b{font-family:"NBGB";}
+	.bottomList .banner .imgSlide{float:none; padding:1px 15px 0 48px; background-position:0 0; border:none;}
+	.bottomList .list{float:none; text-align:center;}
+	.bottomList .list > ul > li{float:none; display:inline-block; width:30%; height:auto; margin:0 1%;}
+	.bottomList .list > ul > li a .imgWrap{height:auto;}
+	.bottomList .list > ul > li a .title{font-size:16px; text-align:left;}
+	.bottomList .list > ul > li .price strong{font-size:20px;}
+	
+	.contentAside { width:70%; margin-top:30px;}
+	.aside { min-width:290px; width:26.6%; margin-top:30px;}
+	.detailNav li {width:16.5%; padding:10px 0px}
+
+	/*#e-bookwrap .fl img { width:90px;}*/
+
+	.bottomNewsWrap .bottomNews,
+	.footerWrap .footer { width:100%;}
+	.bottomNewsWrap li .date { display:none}
+}
+
+@media only screen and (max-width:1199px){
+	.btn_nav2.close{display:block;}
+}
+
+@media screen and (max-width:1030px) {
+	
+	#bbsListWrap_type02 .item { height:378px; width:32.05%; margin-right:1.3%}
+	#bbsListWrap_type03 .item { height:378px; width:32.05%; margin-right:1.3%}	
+	#bbsListWrap_type04 .item { height:280px; width:32.05%; margin-right:1.3%}
+	#bbsListWrap_type04 .item2 { height:280px; width:32.05%; margin-right:1.3%}
+	#bbsListWrap_type04 .pagenavi, #bbsListWrap_type04 .pagebanner { width:32.05%; height:auto; margin-right:1.3%}
+
+	#bbsListWrap_type02 .item:nth-child(4n+4),
+	#bbsListWrap_type03 .item:nth-child(4n+4),
+	#bbsListWrap_type04 .item:nth-child(4n+4) { margin-right:1.3%;}
+	#bbsListWrap_type04 .item2:nth-child(4n+4) { margin-right:1.3%;}
+
+	#bbsListWrap_type02 .item:nth-child(3n+3),
+	#bbsListWrap_type03 .item:nth-child(3n+3),
+	#bbsListWrap_type04 .item:nth-child(3n+3) { margin-right:0px;}
+	#bbsListWrap_type04 .item2:nth-child(3n+3) { margin-right:0px;}
+
+	#bbsListWrap_type02 .item .imgWrap,
+	#bbsListWrap_type03 .item .imgWrap,
+	#bbsListWrap_type04 .item .imgWrap { width:100%; height:auto;}
+	#bbsListWrap_type04 .item2 .imgWrap { width:100%; height:auto;}
+	#bbsListWrap_type04 .item2 .imgWrap .mainImg{position:static; width:100%; margin:0;}
+	#bbsListWrap_type04 .item2 .textWrap .title{width:auto; font-size:14px;}
+	#bbsListWrap_type04 .item2 .textWrap .courseL span{font-size:12px;}
+	#bbsListWrap_type04 .item2 .textWrap .main_con .day{top:40px;}
+	#bbsListWrap_type04 .item2 .textWrap .main_con .day p{width:60px; height:auto; padding:4px 0; line-height:initial; background:#1c376f;  font-size:12px; font-family:"Dotum"; white-space:nowrap;}
+	#bbsListWrap_type04 .item2 .textWrap .courseL{height:58px; min-height:initial;}
+	.tag02{overflow:hidden; white-space:nowrap; text-overflow:ellipsis; min-height:21px; padding:10px 15px; font-size:12px;}
+
+	#bbsListWrap_type04 .month-select .month-view .month-choice strong { display:inline-block; font-size:30px; font-weight:normal; padding:0px 40px 15px 0; vertical-align: -5px;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice em { padding:0 5px; font-style:normal;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice span { display:inline-block; width:50px; margin:3px 3px; border-radius:3px; border:1px solid #4ec3ed; padding:4px 8px;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice span.on1 { text-decoration:underline; border:1px solid #fff;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice span.on2 { background:#fff; color:#2cafde;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice em, #bbsListWrap_type04 .month-select .month-view:hover .month-choice span { cursor: pointer;}
+	
+	/* 여행코스 상세페이지 */
+	.course_infor{width:100%;}
+	.course_infor .con{float:none; width:auto;}
+
+	/* 체占쏙옙/占쏙옙占� 占쏙옙占쏙옙트 */
+	.ex_program { width:48.8%;}
+	.ex_program:nth-child(even) { margin:30px 0px 20px 0; }
+	.ex_program.ex_program002:nth-child(odd) { margin:30px 0px 20px 0; }
+	.ex_program .festival-con .festival_img { width:170px; overflow:hidden}
+	.festival-calendar { float:none; display:block; width:100%; margin-right:0; padding:30px 0px;}
+	.festival-calendar a { display:inline-block; width:auto; font-size:14px; text-align:center; border:2px solid #fff; border-radius:3px; padding:5px 15px; color:#fff; margin:0 3px 0px 0; cursor: pointer;}
+	.festival-calendar a:last-child { display:inline-block; width:auto; }
+	
+	/* 占식깍옙 占쏙옙 占쌉시깍옙 占쏙옙占싱븝옙 占쏙옙 占싱뱄옙占쏙옙 처占쏙옙 
+	#bbstour_review .contentsWrap.subConWrap *,
+	.chart table,
+	.chart table tr td,
+	.chart table tr td span,
+	.chart table tr td span strong,	
+	.chart table tr td strong,
+	.chart table tr td p,
+	.chart.review table,
+	.reading_chart table
+	.bbsDetailWrap table,
+	.bbsDetailWrap table tr td,
+	.bbsDetailWrap table tr td p { width:100% !important; line-height:1.5em !important}
+	.chart.review table td, 
+	.chart.review table td img,
+	.chart.review table td p,
+	.reading_chart table tr td,
+	.reading_chart table tr td img,
+	.reading_chart table tr td p,
+	.reading_chart table tr td.contents,
+	.reading_chart table tr td.contents p,
+	.reading_chart table tr td.contents img { display:block; max-width:98% !important; line-height:1.5em !important}
+	#bbstour_review .contentsWrap.subConWrap span,
+	.chart.review table td span,
+	.reading_chart table tr td span{line-height:1.5em !important}*/
+
+	.footerWrap .fUtil, .footerWrap .fUtil2, .footerWrap .footerContent { float:none; }
+	.footerWrap .footerContent { width:auto; padding:10px; text-align:center; }
+}
+
+@media screen and (max-width:1024px) {
+	.mainBanner .course,
+	.mainBanner .navWrap .navSubWrap,
+	.con_wrap,
+	#content,
+	.bbsWrap .bbsList,
+	.bottomSlide02 .bx-wrapper,
+	.pageNavWrap .pageNavSubWrap,
+	.regionSerach { width:98%; margin:0 auto}
+	
+	.pageNavWrap .pageNavSubWrap { margin:-5px auto 0}
+
+	.bbsDetailWrap.type01 p img,
+	.bbsDetailWrap.type01 p .txc-image{ max-width:100%}
+
+	#bbsListWrap_type02 .item { height:330px;}
+	#bbsListWrap_type03 .item { height:340px;}
+	#bbsListWrap_type04 .item { height:auto;}
+	#bbsListWrap_type04 .item2 { height:auto;}
+	
+	#bbsListWrap_type05 .item .imgWrap { height:166px}
+
+	.festival-con .btnWrap { width:130px;}
+
+	.detailMainImgWrap .contents { width:779px;}
+
+	/* 占쏙옙천占쌘쏙옙占쏙옙占쏙옙 */
+	#bbsListWrap_type04 .selectOrderBy span { padding:5px 35px;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice { top:62px; width:245px;}
+	#bbsListWrap_type04 .month-select .month-view .month-choice .month-box { float:none; display:block; text-align:center}
+	
+	#course_tour_detail .course_tour_right {width:45%} /* 占쏙옙占쏙옙占쏙옙 占쏙옙천 占쏙옙 */ 
+	#course_tour_detail .course_tour_right img {width:80%;}
+	
+	.slideWrap .content li { width:240px !important}
+	
+	/* 占쌕깍옙占쏙옙 占쏙옙占쏙옙 */
+	.bx-wrapper { width:100%}
+	.regionSerach .slideWrap li img { width:326px; height:438px}
+	.footerWrapCn .footerUtilWrap .footerUtil li { width:169.5px}
+	
+	#e-bookwrap .fl { text-align:center; float:none; }
+	#e-bookwrap .fr { margin-left:0px; margin-top:20px; }
+	
+	.detailNav > a { display:none; }
+	.aside .asideWrap.num02, .aside .asideWrap.num04, .aside .asideWrap.num05, .aside .asideWrap.num06 { display:none; }
+	.aside .asideWrap.num03 { border-bottom:1px solid #dedede; }
+	.selectOrderBy .course-add { display:none; }
+	.course_detail_title .markser_view { display:none; }
+	
+	/* 여행상품 기업연수 여행코스 탭 */
+	.detailNav3 li{width:16%; padding:10px 0; font-size:14px;}
+	.detailNav3 li:last-child{width:16%;}
+	.detailNav3 li span{background-position:right 3px;}
+	.detailNav3 li.active span{background-position:right 3px;}
+	
+	/* 카드뉴스 list */
+	#bbsListWrap_type05 .list03 > ul{text-align: center;}
+	#bbsListWrap_type05 .list03 > ul > li{float:none; display:inline-block; width:22%; margin:0 1% 1%;}
+	#bbsListWrap_type05 .list03 > ul > li:nth-child(4n){margin:0 1% 1%;}
+	#bbsListWrap_type05 .list03 > ul > li a .imgWrap{width:auto; height:auto;}
+	#bbsListWrap_type05 .list03 > ul > li a .textWrap .title{text-align:left;}
+	
+	/* 카드뉴스 view */
+	.cardImg{display:none;}
+	.m_cardImg{display:block; margin-bottom:50px;}
+	.cardImgWrap{position:relative;}
+	.cardImgWrap span{display:block;}
+	.cardImgWrap span img{width:100%;}
+	.bx-wrapper .bx-controls-direction a{width:40px; height:40px;}
+	.cardImgWrap .bx-wrapper .bx-prev{left:0; background:url(../images/sub/cardPrev_arr.png) 0 0 no-repeat;}
+	.cardImgWrap .bx-wrapper .bx-next{right:0; background:url(../images/sub/cardNext_arr.png) 0 0 no-repeat;}
+	
+}
+
+
+@media screen and (max-width:1000px) {
+	
+	.contentAside { width:100%; margin-top:30px;}
+	.aside { width:100%; margin-top:30px;}
+	.aside .mapWrap .mapAPIWrap { display:none;}
+	
+	.regionSerach .searchMap { display:none;}
+	
+	/* 여행코스 상세페이지 */
+	#bbsListWrap_type04 .selectOrderBy span { padding:5px 55px;}
+	
+	.detailMainImgWrap02{height:auto;}
+	.detailMainImgWrap02 .contentsWrap{top:50%; left:50%; width:500px; height:auto; margin:0 0 0 -270px; padding:20px; transform:translateY(-50%);}
+	.detailMainImgWrap02 .contentsWrap > .tit{overflow:hidden; margin-bottom:5px; font-size:20px;}
+	.detailMainImgWrap02 .contentsWrap > .tit span{float:left; margin-right:5px;}
+	.detailMainImgWrap02 .contentsWrap > .tit p{float:left; margin:0;}
+	.detailMainImgWrap02 .contentsWrap .content{height:20px; margin-bottom:10px; font-size:14px; word-wrap:break-word; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+	.detailMainImgWrap02 .subWrap{overflow:hidden;}
+	.detailMainImgWrap02 .subWrap .thema{display:inline-block; overflow:hidden; width:270px; margin:0 0 10px 20px;}
+	.detailMainImgWrap02 .subWrap .thema > p{float:none; padding:0 0 0 30px; background:none; text-align:center;}
+	.detailMainImgWrap02 .subWrap .thema div{overflow:hidden; border:none;}
+	.detailMainImgWrap02 .subWrap .thema div > p{float:left;}
+	.detailMainImgWrap02 .subWrap .thema div > p:first-child{margin-right:10px;}
+	.detailMainImgWrap02 .subWrap .weatherNStar{display:inline-block; margin:0;}
+	.detailMainImgWrap02 .btnWrap{display:none;}
+	
+	#course_tour_detail .course_tour_left { float:none; display:block; margin:0 auto} 
+	#course_tour_detail .course_tour_right { float:none; display:block; width:98%; height:auto; overflow:initial; max-width:initial;} /* 占쏙옙占쏙옙占쏙옙 占쏙옙천 占쏙옙 */ 
+	#course_tour_detail .course_tour_right img {margin:20px auto}
+	#course_tour_detail .course_tour_right p {display:inline-block; width:95%}
+	
+	.courseWrap{float:none; width:392px; margin:0 auto;} /* 신규 */
+
+	/* 占쏙옙占쏙옙占쏙옙占쏙옙 */
+	.dPageWrap.type01 .leftImgText { font-size:13px; }
+	.dPageWrap.type01 .leftImgText li,
+	.dPageWrap.type01 .leftImgText li:last-child { float:none; width:100%; text-align:left}
+	.dPageWrap.type01 .leftImgText img { float:none; margin-bottom:30px; }
+	.dPageWrap.type01 .leftImgText .tit { font-size:15px; font-weight:bold; color:#333; }
+	
+	/* 농촌여행지 이미지 갤러리 */
+	.bbsDetailWrap.type01 .mainImgWrap2.mT30_2 img {float:left; width:24.55%; margin:4px 4px 0 0; /*padding-left: 1.5px;padding-right: 1.5px;*/}
+	.bbsDetailWrap.type01 .mainImgWrap2.mT30_2 img:last-child{float:right;}
+
+	/* 占쏙옙占쌌검삼옙 */
+	.search_map_select .fl,
+	.search_thema_select .fl { float:none; display:block; margin-bottom:10px;}
+	.search_map_select .map_select, 
+	.search_thema_select .thema_select, .search_thema_select .thema_select li { float:none; display:block; margin:0; width:auto}
+	.search_thema_select .thema_name { width:auto; }
+	.search_thema_select .thema_name a.btn { display:block; width:65px; margin:10px auto 0 auto;}
+	.ex_program { width:99%;}
+	.ex_program .festival-con .festival_img { width:225px; overflow:hidden}
+	.ex_program .event-title li:last-child { font-size:24px;}
+	.festival-calendar a { display:inline-block; width:auto; font-size:14px; text-align:center; border:2px solid #fff; border-radius:3px; padding:5px 8px; color:#fff; margin:0 3px 8px 0; cursor: pointer;}
+	.festival-calendar a:last-child { display:block; width:150px; margin:0 auto;}
+
+	.footerWrapCn .footerSlideWrap .bx-wrapper,
+	.footerWrapCn .footerSlideWrap .footerSlideCointrolWrap { float:none; display:block; text-align:center}
+	.footerWrapCn .footerSlideWrap .footerSlideCointrolWrap div{text-align:center}
+	.footerWrap .fUtil a { padding:3px 6px 3px 3px; font-size:12px;}
+	
+	.footerWrapCn .footerUtilWrap .footerUtil li { width:16.42%}
+	
+}
+
+@media screen and (max-width:800px) {
+
+	.gnb_wrap .submenu { border-right:none}
+	
+	.slideWrap { width:100% !important}
+	.slideWrap .content li { width:363px !important; margin-right:25px !important}
+	.slideWrap .content li img{ width:100%; !important;}
+	
+	#bbsListWrap_type01 .item { display:inline-block; height:108px; }
+	#bbsListWrap_type01 .item .textWrap .text { font-size:13px; height:21px; }
+	#bbsListWrap_type01 .item .imgWrap .sortWrap .sortLeft { width:100px;}
+	
+	.bbsDetailWrap.type01 .item .imgWrap, .bbsDetailWrap.type01 .item .textWrap, .bbsDetailWrap.type01 .item .btnWrap { float:none; display:block; width:100%; margin:0px}
+	.bbsDetailWrap.type01 .item .textWrap { margin:20px 0;}
+	.bbsDetailWrap.type01 .item .btnWrap .btn {margin:0px}
+	
+	#bbsListWrap_type05 .item .imgWrap { height:140px}
+
+	.festival-con .festival_img { width:290px; }
+	.festival-con .info ul { padding:10px 0 0 30px; max-width:340px;}
+	.festival-con .btnWrap { float:none; display:block; width:auto; height:auto; border:0px; padding-left:20px; background:none; overflow:hidden;}
+	/*.festival-con .btnWrap .price { text-align:left; padding:0px;}*/
+	/*.festival-con .btnWrap .btn { display:inline-block; width:30%;}*/
+
+	#bbsListWrap_type02 .item { height:330px;}
+	#bbsListWrap_type03 .item { height:340px;}
+	#bbsListWrap_type04 .item { height:auto;}
+	#bbsListWrap_type04 .item2 { height:auto;}
+
+	#bbsListWrap_type04 .pagenavi { padding-top:150px; height:210px;}
+	#bbsListWrap_type04 .pagenavi a { font-size:14px;}
+	#bbsListWrap_type04 .pagenavi a#pprev { padding:0 10px 0 50px;}
+	#bbsListWrap_type04 .pagenavi a#pnext { padding:0 50px 0 10px;}
+	#bbsListWrap_type04 .pagebanner { margin:0;}
+
+	#bbsListWrap_type05 .item .imgWrap { min-width:250px;}
+	#bbsListWrap_type05 .item .textWrap { width:auto}
+	#bbsListWrap_type05 .item .textWrap .text { font-size:13px; line-height:1.4em;}
+	#bbsListWrap_type05 .item .btnWrap { float:none; display:block; width:100%; padding-top:20px; overflow:hidden;}
+
+	#netizen_course .textWrap { width:48%}
+	#e-bookwrap .fl { float:none; display:block; text-align:center;}
+	#e-bookwrap .fl img { width:156px; margin-bottom:20px;}
+	/* 占쏙옙占쌌검삼옙 */
+	.searchList_box li.search_con { width:65%; vertical-align: top}
+	.searchList_box .content { height:63px;}
+	
+	/*2018. 01. 29 최현민 : 퍼센트 변경 25%=> 30%  */
+	.detailNav2 li { width:calc(30% - 2px); font-size:12px}
+
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap:nth-child(2n+2) { float:none; display:block;}
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap { width:49.6%}
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap .wetherImg { width:100px}
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap .wetherImg img { width:100%}
+
+	.detailMainImgWrap .contents { width:555px;}
+
+	.detailWrap .wrap1 table { overflow-y:auto; min-width:600px;}
+	.detailWrap h4.mT50 span { display:none}
+	
+	.footerWrapCn, .footerWrapCn .footerSlideWrap { border-top:none}
+	.footerWrapCn .footerUtilWrap .footerUtil { width:98%; border-left:none; border-top:1px solid #e5e5e5; margin:0 auto}
+	.footerWrapCn .footerUtilWrap .footerUtil li:nth-child(3n+3) { display:block; border-right:none}
+	.footerWrapCn .footerUtilWrap .footerUtil li a img { width:88%}
+	.footerWrapCn .footerUtilWrap .footerUtil li { width:32.8%; height:165px; border-bottom:1px solid #e5e5e5}
+	
+
+
+	/* 占쌕깍옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙*/
+	.leftimg40, .rightimg40 {float:none; display:block; margin-bottom:15px; width:100%}
+
+	.contentAside { float:none; width:100%; margin-top:30px;}
+	.aside { float:none; display:block; width:100%;}
+	.aside .mapWrap .mapAPIWrap { display:none}
+	
+	/* 占쏙옙占쏙옙 占쏙옙 占쏙옙 占쌨댐옙 */
+	.detailNav { width:100%; }
+	.detailNav li {font-size:12px}
+
+	.footerWrap .bottomUtil a { width:30%; margin:20px 1%; }
+	.footerWrap .footerContent span { display:block; }
+	
+	.pageMainBanner { height:180px; }
+	
+	.bottomList .list > ul > li a .textWrap div .state{float:none; height:22px; margin-bottom:10px;}
+}
+
+@media screen and (max-width:740px) {/* iphone 6 plus width 736 */
+	#bbsListWrap_type01 .item { float:none; display:block !important; width:99%; height:142px; }
+	#bbsListWrap_type01 .item .imgWrap { width:40%}
+	#bbsListWrap_type01 .item .textWrap { width:55%}
+
+	#bbsListWrap_type02 .item,
+	#bbsListWrap_type03 .item { height:320px; width:48.55%; margin-right:1.8%}
+	#bbsListWrap_type04 .item { height:auto; width:48.55%; margin-right:1.8%}
+	#bbsListWrap_type04 .item2 { height:auto; width:48.55%; margin-right:1.8%}
+	
+	#bbsListWrap_type02 .item:nth-child(3n+3),
+	#bbsListWrap_type03 .item:nth-child(3n+3),
+	#bbsListWrap_type04 .item:nth-child(3n+3) { margin-right:1.8%;}
+	#bbsListWrap_type04 .item2:nth-child(3n+3) { margin-right:1.8%;}
+
+	#bbsListWrap_type02 .item:nth-child(2n+2),
+	#bbsListWrap_type03 .item:nth-child(2n+2),
+	#bbsListWrap_type04 .item:nth-child(2n+2) { margin-right:0px;}
+	#bbsListWrap_type04 .item2:nth-child(2n+2) { margin-right:0px;}
+
+	#bbsListWrap_type02 .item .imgWrap,
+	#bbsListWrap_type03 .item .imgWrap,
+	#bbsListWrap_type04 .item .imgWrap { width:100%; height:198px;}
+	#bbsListWrap_type04 .item2 .imgWrap { width:100%; height:198px;}
+
+	#bbsListWrap_type02 .item .textWrap .title,
+	#bbsListWrap_type03 .item .textWrap .title,
+	#bbsListWrap_type04 .item .textWrap .title { height:auto}
+	#bbsListWrap_type04 .item2 .textWrap .title { height:auto}
+
+	.detailMainImgWrap { height:160px;}
+	.detailMainImgWrap > img { width:100%; height:185px;}
+	.detailMainImgWrap .contents { width:100%; height:185px;}
+	.detailMainImgWrap .contents .tit { margin-top: 30px; font-size:20px; line-height:110%; }
+	.detailMainImgWrap .contents .content { font-size:14px; height:75px; }
+	.detailMainImgWrap .weatherNStar { display:none}
+
+	.bbsSearchWrap .bbsSearch { font-size:12px}
+	.bbsSearchWrap .bbsSearch .inputText { width:110px}
+	
+	/* 농촌여행지 이미지 갤러리 */
+	.bbsDetailWrap.type01 .mainImgWrap2.mT30_2 img {float:left; width:24.5%; margin:4px 4px 0 0; /*padding-left: 1.5px;padding-right: 1.5px;*/}
+
+	/* 占쏙옙占쌌검삼옙 */
+	.searchNav li { float:none; display:block; width:auto; border:0.1em solid #909090; margin-bottom:-1px;}
+	.footerWrap .bottomUtil a { width:30%; margin:20px 1%; }
+	.footerWrap .footerContent span { display:block; }
+	.footerWrap .fUtil a { padding:3px 6px 3px 3px; font-size:12px; }
+
+	.bottomNewsWrap .notice, .bottomNewsWrap .news, .bottomNewsWrap .infoCall { float:none; display:block; width:99%; border:0px; border-bottom:1px solid #ddd; overflow: hidden;}
+	.bottomNewsWrap li .date { display:inline-block}
+	
+	.pageMainBanner { height:300px; background:url(../images/common/welchon_bestMo.jpg) center center no-repeat; background-size:contain; }
+	
+	.bbsDetailWrap.type01 .content { height:55px; }
+	
+	.festival-con > li { float:none; }
+	.festival-con .festival_img { float:left; }
+	.bbsDetailWrap.type01 .btnWrap { padding-top:5px; padding-bottom:5px; }
+	.festival-con .btnWrap .price { display:inline-block; padding-right:20px; }
+	.festival-con .btnWrap .btn { display:inline-block; width:30%; }
+	
+	/* 카드뉴스 list */
+	#bbsListWrap_type05 .list03 > ul > li{width:30%;}
+	
+}
+
+@media screen and (max-width:650px) {
+	
+	#bbsListWrap_type02 .item { height:328px;}
+	#bbsListWrap_type03 .item { height:auto; max-height:350px}
+	#bbsListWrap_type04 .item { height:auto;}
+	#bbsListWrap_type04 .item .imgWrap { width:100%; height:171px;}
+	#bbsListWrap_type04 .item2 { height:auto;}
+	#bbsListWrap_type04 .item2 .imgWrap { width:100%; height:171px;}
+	#bbsListWrap_type04 .pagenavi, #bbsListWrap_type04 .pagebanner { display:none;}
+
+	.detailNav li {width:16.3%; padding:10px 0px}
+
+	.bbsDetailWrap.type01 .eventWrap .event-title { display:block;}
+	.bbsDetailWrap.type01 .eventWrap .event-title li:first-child { display:block;}
+	.bbsDetailWrap.type01 .eventWrap .event-title li:last-child { display:none; }
+
+	#bbsListWrap_type05 .item .imgWrap { float:none; display:block; width:100%; height:345px}
+	#bbsListWrap_type05 .item .textWrap { float:none; display:block; width:100%; margin:15px 0 0;}
+	/* #bbsListWrap_type05 .item .textWrap .text { display:none; } */
+	#bbsListWrap_type05 .item .btnWrap .btn { width:110px;}
+	
+	#bbsListWrap_type01 .item .textWrap .text { height:42px;}
+
+	#netizen_course_box .imgwrap, #netizen_course_box .content { float:none; display:block; width:100% !important}
+	#netizen_course_box .imgwrap img { width:100%; height:auto;}
+	#netizen_course_box .content h3 { margin-top:15px;}
+
+	.month-select input[type=text] { width:230px;}
+	
+	/* 농촌여행지 이미지 갤러리 */
+	.bbsDetailWrap.type01 .mainImgWrap2.mT30_2 img {width:24.4%; height:100px;}
+
+	/* 占쏙옙占쌌검삼옙 */
+	.searchList_box li.search_con { width:60%; vertical-align: top}
+	.searchList_box .content { height:63px;}
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap {float:none; display:block;}
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap { width:99%}
+	.dPageWrap.type01 .greyBoxNoPadding .weatherWrap .wetherImg { width:115px}
+
+	.footerWrapCn .footerUtilWrap .footerUtil tbody td { display:block; text-align:left; border-bottom:1px solid #e6e6e6}
+	.footerWrapCn .footerUtilWrap .footerUtil tbody td img { float:left; width:45px; margin-right:15px; vertical-align:middle}
+	.bottomUtilWrap .bottomUtil a { width:32.3333%; max-height:170px; padding:0 0.5%; font-size:12px; line-height:1.3em; letter-spacing:-1px; margin:10px 0; vertical-align:top; }
+	
+	.sortWrap2 th { display:block; padding-left:0px; width:auto; border-top:1px solid #eee; }
+	.sortWrap2 td { display:block; padding-left:40px; }
+	.sortWrap2 select { width:45% !important; margin-right:4%; }
+	.sortWrap2 input[type='text'] { width:70%; }
+	.sortWrap2 input[type='submit'] { width:20%; margin-right:10px; }
+	
+	/* 여행코스 상세페이지 */
+	.detailMainImgWrap02 .contentsWrap{width:440px; margin:0 0 0 -240px; padding:20px 20px 0;}
+	.detailMainImgWrap02 .subWrap .thema{width:auto; padding:5px 0;}
+	.detailMainImgWrap02 .subWrap .thema > p{float:left; padding:0;}
+	.detailMainImgWrap02 .subWrap .weatherNStar{display:none;}
+	
+	
+	
+}
+
+@media screen and (max-width:600px) {
+	
+	.bottomList .list > ul > li{width:100%; margin:0 0 15px;}
+	.bottomList .list > ul > li a .imgWrap{max-height:initial;}
+	.bottomList .list > ul > li a .textWrap div .state{float:left; height:auto; margin-bottom:0;}
+	
+	/* 여행코스 상세페이지 */
+	.detailMainImgWrap02 .weatherNStar .weather{display:none;}
+	.detailMainImgWrap02 .contents{width:300px; margin:0 0 0 -160px; padding:10px;}
+	.detailMainImgWrap02 .contents > .tit{font-size:16px;}
+	.detailMainImgWrap02 .contents .content{height:34px; margin-bottom:10px; font-size:12px;}
+	.detailMainImgWrap02 .btnWrap a{padding:5px; background:none; font-size:14px;}
+	
+	/* 상세페이지 탭 */
+	.detailNav3{display:block; overflow:visible;}
+	.detailNav3:after{display:block; content:""; clear:both;}
+	.detailNav3 li{display:block; float:left; width:25%; margin:-1px 0 0 -1px;}
+	.detailNav3 li:last-child{width:25%;}
+	.detailNav3 li span{background-position:right 2px;}
+	.detailNav3 li.active span{background-position:right 2px;}
+	
+	.detailWrap > p{font-size:14px;}
+	
+}
+
+@media screen and (max-width:550px) {
+	
+	/* main */
+	.bottomList .banner{text-align:center;}
+	.bottomList .banner .tit{float:none; height:auto; margin:0 0 20px 0; padding:0; background:none; border:none;}
+	.bottomList .banner .tit p:first-child{margin-bottom:10px; font-size:24px;}
+	.bottomList .banner .tit p.mobile span{display:inline; font-size:14px;}
+	.bottomList .banner .imgSlide{display:inline-block;}
+	
+	.festival-con > li { float:none !important; width:auto !important; }
+	.festival-con .btnWrap { border-top:1px solid #ddd; padding:10px 0px; }
+	.festival-con .btnWrap .btn { margin-top:0px; }
+	
+	/* 농촌여행지 이미지 갤러리 */
+	.bbsDetailWrap.type01 .mainImgWrap2.mT30_2 img {width:24.2%; height:85px;}
+	
+	/* 여행코스 상세페이지 */
+	.detailMainImgWrap02 .contentsWrap{width:340px; margin:0 0 0 -190px;}
+	.detailMainImgWrap02 .contentsWrap > .tit,
+	.detailMainImgWrap02 .contentsWrap > .tit span{font-size:16px;}
+	.course_infor .tit{display:block; width:auto; padding:20px 0; border-right:none; border-bottom:1px dotted #fff;}
+	.course_infor .con{padding:20px; font-size:13px !important;}
+	.course_infor .con > p{font-size:13px !important;}
+	
+}
+
+@media screen and (max-width:500px) {
+	
+	/* main */
+	.bottomList .banner{width:auto; margin:0 0 40px; text-align:center;}
+	.bottomList .banner .tit{float:none;}
+	.bottomList .banner .imgSlide{display:inline-block;}
+
+	/* 占쏙옙占쌌검삼옙*/
+	.searchList_box li.imgWrap { width:190px;}
+	.searchList_box li.search_con { width:56%; vertical-align: top}
+	.hugiNav a { font-size:12px;}
+	
+	/* .detailNav2 li { width:46.7%;} */
+	.selectOrderBy li { float:none; display:block; text-align: right;}
+	.selectOrderBy li a { font-size:12px}	
+	
+	#bbsListWrap_type01 .item .imgWrap { width:50%}
+	#bbsListWrap_type01 .item .textWrap { width:45%}
+	
+	#bbsListWrap_type05 .item .imgWrap { height:258px}
+	
+	/* 占쏙옙천占쏙옙占쏙옙 占쌘쏙옙 */
+	#bbsListWrap_type04 .month-select { height:120px;}
+	
+	/* 占쏙옙占쏙옙 占쌓몌옙占쏙옙占쏙옙占쌘쏙옙  */
+	#bbsListWrap_type04 .month-select .fl { float:none; border-bottom:1px solid #eee; }
+	#bbsListWrap_type04 .month-select .fl .month-view { border-right:0px; }
+	#bbsListWrap_type04 .month-select .fr { float:none; padding-left:30px; }
+	
+	.pageMainBanner { height:180px; }
+	
+	/* 여행코스 상세페이지 */
+	.detailMainImgWrap02 img{height:250px;}
+	.detailMainImgWrap02 .contentsWrap{width:280px; height:200px; margin:0 0 0 -160px;}
+	.detailMainImgWrap02 .subWrap .thema > p{float:none; margin:0;}
+	.detailMainImgWrap02 .contentsWrap .content{height:55px; font-size:13px; -webkit-line-clamp:3;}
+	
+	/* 카드뉴스 list */
+	#bbsListWrap_type05 .list03 > ul > li{width:47%;}
+	#bbsListWrap_type05 .list03 > ul > li a .textWrap .title{font-size:14px;}
+}
+
+@media screen and (max-width:420px) { /* iphone 6 plus width 414 */
+	.pageNavWrap .pageNav .btnPageNav { font-size:12px; padding:0; background:none}
+	.pageNavWrap .pageNav .btnPageNav > a { padding-left:8px}
+	.pageNavWrap .pageNav .pageNavSubmenu > a { font-size:12px;}
+	
+	#bbsListWrap_type01 .item { height:120px;}
+	#bbsListWrap_type01 .item .imgWrap .sortWrap .sortLeft,
+	#bbsListWrap_type01 .item .textWrap .date { display:none;}
+	#bbsListWrap_type01 .item .textWrap { margin: 10px 10px 0 0;}
+
+	#bbsListWrap_type02 .item,
+	#bbsListWrap_type03 .item,
+	#bbsListWrap_type04 .item { display:block; height:auto; width:99%; margin-right:0%}
+	#bbsListWrap_type04 .item2 { display:block; height:auto; width:99%; margin-right:0%}
+
+	#bbsListWrap_type02 .item .imgWrap,
+	#bbsListWrap_type03 .item .imgWrap,
+	#bbsListWrap_type04 .item .imgWrap { width:100%; height:197px;}
+	#bbsListWrap_type04 .item2 .imgWrap { width:100%; height:197px;}
+
+	#bbsListWrap_type02 .item .textWrap .title,
+	#bbsListWrap_type03 .item .textWrap .title,
+	#bbsListWrap_type04 .item .textWrap .title { height:auto}
+	#bbsListWrap_type04 .item2 .textWrap .title { height:auto}
+
+	#bbsListWrap_type04 .month-select .month-view { position:relative; text-align:center; border-right:0;}
+	#bbsListWrap_type04 .month-select input[type=text] { width:140px;}
+	#bbsListWrap_type04 #course-title { font-size:22px;}
+
+	/*
+	#bbsListWrap_type03 .selectOrderBy { text-align:left}
+	#bbsListWrap_type03 .selectOrderBy .bbsName { float:none; display:block; margin-bottom:30px;}
+	#bbsListWrap_type03 .selectOrderBy a { padding:0 10px 0 0; margin-right:10px}*/
+
+	#netizen_course .imgWrap { float:none; display:block; width:100%; height:190px; margin-bottom:20px}
+	#netizen_course .imgWrap img { height:190px;}
+	#netizen_course .textWrap { float:none; display:block; width:100%}
+        /* 占쏙옙占쌌검삼옙*/
+	.searchList_box li.imgWrap { float:none; display:block; width:auto; max-height:280px;}
+	.searchList_box li.search_con { width:100%; vertical-align: top; padding-top:10px;}
+	.searchList_box .info { font-size:12px;}
+
+	/* .detailNav li {width:32.7%; padding:10px 0px} */
+	.detailNav li {width:24.7%; padding:10px 0px}
+	.festival-con .festival_img { width:100%; }
+
+	#netizen_course_box .content ul li:first-child { float:none; display:block; margin-bottom:10px;}
+	#netizen_course_box .content ul li:last-child { float:none; display:block; width:100% }
+	#netizen_course_box .content .data, #netizen_course_box .content .data .view, #netizen_course_box .content .data .like { font-size:11px;}
+
+	#e-bookwrap ul, #e-bookwrap ul:nth-child(2n+2) { float:none; display:block; width:94%;}
+	#e-bookwrap li { float:none; display:block; width:100%;}
+
+	.ex_program .festival-con .festival_img { width:100%; overflow:hidden}
+	.ex_program .event-title li:last-child { font-size:16px;}
+	.festival-calendar a { display:inline-block; width:auto; font-size:14px; text-align:center; border:2px solid #fff; border-radius:3px; padding:5px 8px; color:#fff; margin:0 3px 8px 0; cursor: pointer;}
+	
+	#subUtil li a.page_print { display:none}
+
+	.bbsSearchWrap .bbsSearch .inputText { width:80px}
+	.bbsSearchWrap .bbsSearch .selectArea { display:none}
+		
+	.dPageWrap.type01 .leftImgText li { display:block; padding-bottom:15px}
+
+	.bottomNewsWrap li .date { display:none}
+	.footerWrap .footerContent { font-size:12px; letter-spacing:-1px}
+	
+	.sortWrap tr, .sortWrap th, .sortWrap td { display:block; }
+	.sortWrap th { padding-left:10px; }
+	.sortWrap td { padding-left:25px; }
+
+	.bottomUtilWrap .bottomUtil a { height:150px; }
+	
+	/* 농촌여행지 이미지 갤러리 */
+	.bbsDetailWrap.type01 .mainImgWrap2.mT30_2 img {width:24%; height:60px;}
+	.bbsDetailWrap.type01 .mainImgWrap2 .viewPic{padding:0;}
+	.bbsDetailWrap.type01 .mainImgWrap2 .viewPic a{padding:5px 10px; background:none;}
+	
+	/* 여행상품 기업연수 여행코스 탭 */
+	.detailNav3 li{font-size:12px;}
+	
+	/* 여행코스 상세페이지 */
+	.courseWrap{width:290px;}
+	.course_list .course_txt{width:110px;}
+	.course_list .course_img a img{width:180px; height:105px;}
+	.course_list .course_img > p{width:180px; font-size:12px;}
+}
+
+@media screen and (max-width:380px){
+	
+	/* main*/
+	.bottomList .banner .tit{font-size:20px;}
+	.bottomList .list .tit{font-size:20px;}
+	
+	.detailMainImgWrap02 img{height:250px;}
+	.detailMainImgWrap02 .contentsWrap{width:250px; margin:0 0 0 -145px;}
+	.detailMainImgWrap02 .contents{width:250px; margin:0 0 0 -135px;}
+	.detailMainImgWrap02 .contents > .tit{font-size:14px;}
+	.detailMainImgWrap02 .subWrap .thema div{letter-spacing:-1px;}
+	
+	/* 카드뉴스 list */
+	#bbsListWrap_type05 .list03 > ul{text-align:left;}
+	#bbsListWrap_type05 .list03 > ul > li{width:100%; margin:0;}
+	
+}
+
+@media screen and (max-width:320px) { /* iphone 6 plus width 320 */
+	.pageNavWrap .pageNav .btnPageNav { font-size:12px; width:auto;}
+	.pageNavWrap .pageNav .btnPageNav > a { background:none}
+	
+	#bbsListWrap_type01 .item { height:87px}
+	#bbsListWrap_type02 .item { display:block; max-height:352px;}
+	
+	#bbsListWrap_type05 .item .imgWrap { height:194px}
+
+	.festival-con .btnWrap .btn { width:auto; padding:6px 30px;}
+    .detailNav2 li { width:46%;}
+	.detailMainImgWrap { height:185px;}
+	.festival-con .btnWrap .price { display:block; }
+}
+
+/* top footer 占쏙옙 */

@@ -1,0 +1,513 @@
+@charset "utf-8";
+
+.IR{display:none;width:0;height:0;font-size:0;color:transparent;line-height:0}
+input[type="submit"]{-webkit-appearance:none; -webkit-border-radius:3px;}
+
+#header{height:93px; border-bottom:1px solid #ccc;}
+.h_wrap{overflow:hidden; position:relative; width:1000px; margin:0 auto;}
+.h_wrap h1{float:left; margin-top:25px;}
+.h_wrap h2{position:absolute; top:28px; right:0px;}
+.h_wrap .sns{float:right; margin-top:38px; margin-right:150px;}
+.h_wrap .sns a{display:block; float:left; margin-left:24px;}
+.h_wrap .sns a:first-child{margin-left:0;}
+
+.contents{position:relative; padding-bottom:150px; margin:0 auto; width:1000px;}
+.contents:after{clear:both; display:block; content:"";}
+
+/* 181004 異붽� */
+.visual .bx-controls{position:relative;}
+.bx-wrapper .bx-pager{left:50%; bottom:10px; transform:translateX(-50%);}
+/* 181004 �걹 */
+
+.visual{position:relative;}
+.visual ul li{border:1px solid #ebebeb;}
+#travel-bx-pager{margin:-77px 0 30px; text-align:center; font-size:0;}
+#travel-bx-pager a{display:inline-block; width:175px; height:17px; padding:15px 0; background-color:#000; border-right:1px solid #fff; opacity:0.6; font-size:15px; color:#fff;}
+#travel-bx-pager a:last-child{border-right:none;}
+#travel-bx-pager a.active{opacity:0.8;}
+
+.tag{overflow:hidden; margin-bottom:50px; padding:19px 37px; background-color:#fafafa; border:1px solid #ebebeb;}
+.tag p{float:left; margin:5px 27px 0 0; font-family:"NSB"; font-size:28px;}
+.tag ul{float:left; width:755px;}
+.tag ul li{float:left; margin-right:15px;}
+.tag ul li a{display:block; padding:9px 13px 8px; border:1px solid #cacaca; border-radius:25px; font-family:"NS"; font-size:18px;}
+
+.tab{margin-bottom:30px; border-bottom:1px solid #797b7e; text-align:center;}
+.tab ul li{display:inline-block; margin:0 4px;}
+.tab ul li a{display:block; width:120px; padding:12px 0; background-color:#45484e; font-family:"NS"; font-size:20px; color:#cdcdcf;}
+.tab ul li.active a{position:relative; padding:18px 0 12px; background-color:#028396; font-family:"NSB"; color:#fff;}
+.tab ul li.active a:after{content:""; display:block; position:absolute; bottom:-8px; left:50%; width:17px; height:8px; margin-left:-8px; background:url(https://www.welchon.com/web/resources/images/travel/sub/tab_arr.gif) 0 0 no-repeat;}
+
+/*  */
+.sch_tit{margin-bottom:18px; font-family:"NSB"; font-size:28px; text-align:center;}
+.sch_tab ul{display:table; table-layout:fixed; width:100%;}
+.sch_tab ul li{display:table-cell; text-align:center; margin-left:-1px; font-size:20px; font-family:"NSB"; letter-spacing:-0.045em;}
+.sch_tab ul li a{display:block; padding:16px 0; border:2px solid #797b7e;}
+.sch_tab ul li.active a{background-color:#45484e; border:2px solid #45484e; color:#fff;}
+.detail_sch{position:relative; min-height:37px; margin-bottom:53px;}
+.sortWrap3{padding:12px 37px 50px; border:2px solid #797b7e; border-top:none;}
+.sortHide{display:none;}
+.myselect2{width:100%; table-layout:fixed;}
+.myselect2 th{padding:10px 0; background:url(https://www.welchon.com/web/resources/images/travel/sub/sch_tit_arr.gif) right 21px no-repeat; font-size:18px; text-align:left;}
+.myselect2 th span{font-family:"NSB";}
+.myselect2 td{padding:10px 20px; letter-spacing:-1px;}
+.myselect2 td select{width:110px; height:35px; margin-right:10px; padding-left:10px; border:1px solid #ccc;}
+.myselect2 td ul:after{display:block; content:""; clear:both;}
+.myselect2 td ul li{float:left; margin-right:10px;}
+.myselect2 td ul li.form{margin-right:0;}
+.myselect2 td ul li.form span{margin:0 3px 0 6px; font-size:14px;}
+.myselect2 td ul li.form input{width:78px; height:17px; padding:8px 10px 8px 0; border:1px solid #ccc; text-align:right;}
+.myselect2 td ul li.form a{display:inline-block; width:57px; height:17px; padding:8px 0; margin-left:5px; background-color:#384863; border:1px solid #2e3238; border-radius:inherit; color:#fff; font-size:14px; text-align:center; vertical-align:middle;}
+.myselect2 td ul li a{display:block; padding:8px 10px; background-color:#fafafa; border:1px solid #ccc; border-radius:3px; font-size:14px;}
+.myselect2 td ul li a.on{background-color:#c33c6f; border:1px solid #a32a57; color:#fff;}
+.myselect2 td.sch{background-color:#dedfe1; text-align:center;}
+.myselect2 td.sch select{width:152px; height:40px; padding-left:10px;}
+.myselect2 td.sch input[type="text"]{width:386px; height:19px; padding:10px 0 9px 10px; border:1px solid #ccc;}
+.myselect2 td.sch input[type="submit"]{display:inline-block; width:116px; height:40px; margin-left:10px; background-color:#384863; border:1px solid #2e3238; color:#fff; font-size:15px; text-align:center;}
+#subSearchWrap{margin-top:20px; padding-top:20px; border-top:1px dashed #ccc;}
+#subSearchWrap ul:after{display:block; content:""; clear:both;}
+#subSearchWrap ul li{position:relative; float:left; margin-right:18px; padding:8px 10px; background-color:#c33c6f; border:1px solid #a32a57; border-radius:3px; font-size:14px; color:#fff;}
+#subSearchWrap ul li > a{display:block; position:absolute; top:-9px; right:-9px;}
+#subSearchWrap ul li.chk_clear{margin:0; padding:0; background:none; border:none;}
+#subSearchWrap ul li.chk_clear span a{display:inline-block; width:85px; height:17px; padding:8px 0 7px 15px; margin-left:10px; background:#384863 url(https://www.welchon.com/web/resources/images/travel/sub/remove_ico.gif) 71px 10px no-repeat; border:1px solid #2e3238; border-radius:inherit; color:#fff; font-size:14px;}
+.page_btn{position:absolute; bottom:0px; left:50%; margin-left:-34px;}
+.page_btn.on{bottom:-35px;}
+.page_btn a{display:block; width:68px; height:68px; background-color:#fff; border:2px solid #808285; border-radius:50%; font-family:"NBGB"; text-align:center;}
+.page_btn a span{display:block; padding-top:34px; background:url(https://www.welchon.com/web/resources/images/travel/sub/sch_open_arr.gif) center 17px no-repeat;}
+
+.list_opt{overflow:hidden; margin-bottom:18px;}
+.list_opt p{float:left; font-size:15px; color:#666;}
+.list_opt p b{font-family:"NBGB"; color:#e14462;}
+.list_opt div{float:right;}
+.list_opt div a{display:block; float:left; margin-left:10px; padding-left:18px; background:url(https://www.welchon.com/web/resources/images/travel/sub/cat_bar.gif) 0 3px no-repeat; font-size:15px; color:#666;}
+.list_opt div a:first-child{margin-left:0; padding-left:0; background:none;}
+.list_opt div a.on{text-decoration:underline; color:#e14462;}
+
+/* view page list(type1)*/
+.travelList1:after{display:block; content:""; clear:both;}
+.travelList1 li{float:left; width:316px; height:380px; margin:0 26px 26px 0;}
+.travelList1 li:nth-child(3n){margin:0 0 26px 0;}
+.travelList1 li a{display:block;}
+.travelList1 li a .imgWrap{position:relative; border-bottom:3px solid #6650a6;}
+.travelList1 li a .imgWrap img{width:316px; height:178px;}
+.travelList1 li a .imgWrap span{position:absolute; bottom:0; left:0; display:block; width:76px; padding:10px 0; background-color:#6650a6; font-family:"NBGB"; font-size:15px; color:#fff; text-align:center;}
+.travelList1 li a .conWrap{padding:20px 20px 14px; border:1px solid #dfdfdf;}
+.travelList1 li a .conWrap .tit{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:10px; font-family:"NSB"; font-size:20px;}
+.travelList1 li a .conWrap .txt{height:46px; margin-bottom:12px; font-size:15px; line-height:23px; color:#666;}
+.travelList1 li a .conWrap span{display:block; height:27px; font-family:"NSB"; font-size:24px; color:#e14462; text-align:right;}
+.travelList1 li a .linkWrap{overflow:hidden; background-color:#fafafa; border:1px solid #dfdfdf; border-top:none;}
+.travelList1 li a .linkWrap p{display:block; float:left; width:156px; padding:13px 0; font-size:15px; text-align:center;}
+.travelList1 li a .linkWrap p:first-child{width:157px; border-right:1px solid #dfdfdf;}
+.travelList1 li a .linkWrap p span{padding-right:20px; background:url(https://www.welchon.com/web/resources/images/travel/sub/list_arr.gif) right 3px no-repeat;}
+.travelList2:after{display:block; content:""; clear:both;}
+.travelList2 > li{overflow:hidden; float:left; position:relative; width:316px; height:376px; margin:0 26px 26px 0; border:1px solid #dfdfdf; box-sizing:border-box;}
+.travelList2 > li:nth-child(3n){margin:0 0 26px 0;}
+.travelList2 > li a{display:block;}
+.travelList2 > li a .imgWrap{position:relative; border-bottom:3px solid #6650a6;}
+.travelList2 > li a .imgWrap img{width:316px; height:178px; max-width:100%;}
+.travelList2 > li a .conWrap{padding:24px 20px;}
+.travelList2 > li a .conWrap .tit{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:10px; color:#333; font-family:"NSB"; font-size:20px; letter-spacing:-0.045em;}
+.travelList2 > li a .conWrap .txt{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:12px; height:23px; font-size:13px; line-height:23px; color:#666;}
+.travelList2 > li a .conWrap span{display:block; text-align:center; padding:9px 0; background:#ecf8f2; border:1px solid #258b55; font-family:"NBGB"; font-size:15px; color:#147642;}
+/* 
+.travelList2 > li .eventWrap{position:absolute; bottom:44px; transform:translateY(100%); width:100%; background:#fafafa; border-top:1px solid #dfdfdf; transition:transform 0.35s ease-in-out;}
+.travelList2 > li .eventWrap:hover{position:absolute; transform:translateY(calc(0% + 44px));}
+.travelList2 > li .eventWrap ul{position:relative;}
+.travelList2 > li .eventWrap ul::before{content:''; position:absolute; top:10px; right:20px; width:25px; height:25px; background:#6b707a; border-radius:50%;}
+.travelList2 > li .eventWrap ul::after{content:''; position:absolute; top:19px; right:27px; border-top:none; border-bottom:5px solid #fff; border-left:6px solid transparent; border-right:5px solid transparent;}
+.travelList2 > li .eventWrap:hover ul::after{top:21px; border-top:5px solid #fff; border-bottom:none;}
+.travelList2 > li .eventWrap ul li{}
+.travelList2 > li .eventWrap ul li a{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding:14px 0px 14px 20px; width:calc(100% - 55px); box-sizing:border-box;}
+.travelList2 > li .eventWrap ul li a:hover{text-decoration:underline;}
+ */
+.travelList2 > li .event { position:relative; padding:12px 30px 11px 18px; border-top:1px solid #dedede; background: url(https://www.welchon.com/web/resources/images/sub/moreArr.png) no-repeat right 5px; z-index:5; white-space: nowrap; text-overflow: ellipsis;overflow: hidden;}
+.travelList2 > li:hover .event {}
+.travelList2 > li .event p{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.travelList2 > li .event .moreArr { vertical-align:middle; float:right; margin-top:8px; }
+.travelList2 > li .eventList { position:absolute; bottom:0px; left:0px; padding:11px 10px 12px 10px; width:100%; background:#fff; border-top:1px solid #dedede; display:none; box-sizing:border-box;}
+.travelList2 > li .eventList:hover{background:#f9f9f9;}
+.travelList2 > li .eventList li {position:relative; padding-left:10px; margin-top:8px;}
+.travelList2 > li .eventList li:first-child {margin-top:0px;}
+.travelList2 > li .eventList li::before{content:''; position:absolute; top:5px; left:0px; background:#555; width:4px; height:4px; border-radius:2px;}
+.travelList2 > li .eventList li:nth-child(7) ~ li{display:none;}
+.travelList2 > li .eventList li{}
+.travelList2 > li .eventList li a{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+/*  */
+/* 
+#bbsListWrap_type02 { width:100%; position:relative; }
+#bbsListWrap_type02 .list { margin:10px 0px 30px 0px; overflow:hidden; }
+#bbsListWrap_type02 .item { position:relative; float:left; overflow:hidden; width:316px; text-align:left; border:1px solid #dedede; margin:0 17px 17px 0; padding:0; height:281px;}
+#bbsListWrap_type02 .item .expe { margin-bottom:15px }
+#bbsListWrap_type02 .item:nth-child(3n+3) {margin-right:0px;}
+#bbsListWrap_type02 .item .imgWrap { position:relative; width:316px; height:160px; overflow:hidden; margin-right:20px; float:none; }
+#bbsListWrap_type02 .item .imgWrap a { color:#333; }
+#bbsListWrap_type02 .item .imgWrap img { width:100%; }
+#bbsListWrap_type02 .item .imgWrap .mainImg { width:100%; height:100%; -moz-transition: all 1s ease-in-out; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out;}
+#bbsListWrap_type02 .item:hover .imgWrap .mainImg { -moz-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2)}
+#bbsListWrap_type02 .item .imgWrap .bestMarker { position:absolute; right:10px; top:10px; z-index:5; width:30px; height:41px; background:url(https://www.welchon.com/web/resources/images/sub/bestMarker.png) center center; �뜝�럩紐드뜝�럩紐�占쎈／�뜝占� }
+#bbsListWrap_type02 .item .imgWrap .sortWrap { position:absolute; bottom:0px; left:0px; background:url(https://www.welchon.com/web/resources/images/sub/listBg.png); width:100%; z-index:3}
+#bbsListWrap_type02 .item .imgWrap .sortWrap .sortLeft { float:left; background-color:#3f51b5; color:#fff; width:120px; text-align:center; padding:2px 0px; }
+#bbsListWrap_type02 .item .imgWrap .sortWrap .sortRight { float:right; text-align:right; padding:0 10px 0 20px; color:#fff; background:url(https://www.welchon.com/web/resources/images/sub/bbs_btn_nav_bg.png) left center no-repeat; }
+#bbsListWrap_type02 .item .textWrap { margin:18px; color:#737373; }
+#bbsListWrap_type02 .item .textWrap .sort { color:#0dbdf0; }
+#bbsListWrap_type02 .item .textWrap .title { font-size:18px; font-weight:bold; color:#333; margin-bottom:10px; height:24px; overflow:hidden; }
+#bbsListWrap_type02 .item .textWrap .date { margin-bottom:10px; display:none; }
+#bbsListWrap_type02 .item .textWrap .text { height:80px; overflow:hidden; line-height:1.5em; display:none; }
+#bbsListWrap_type02 .item .textWrap .address { font-size:12px; height:21px; margin-top:8px; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden;}
+#bbsListWrap_type02 .item .textbox { font-size:14px; padding:10px; line-height:100%; height:30px; overflow:hidden; }
+#bbsListWrap_type02 .item .pointStar { position:absolute; top:50%; left:50%; width:195px; height:85px; margin:-57px 0 0 -105.5px; padding:10px; background:url(https://www.welchon.com/web/resources/images/sub/listBg.png) left top; font-size:14px; color:#fff; z-index:1; display:none; }
+#bbsListWrap_type02 .item .pointStar p { text-indent:15px}
+#bbsListWrap_type02 .item .pointStar .none-wig { width:44px; display:inline-block; vertical-align:middle; }
+#bbsListWrap_type02 .item .pointStar .tit { overflow:hidden; display:inline-block; vertical-align:middle; }
+#bbsListWrap_type02 .item .pointStar .star { display:inline-block; width:13px; height:13px; margin-left:10px; background:url(https://www.welchon.com/web/resources/images/sub/star.png) left top; vertical-align:middle; }
+#bbsListWrap_type02 .item .pointStar .star_bar { display:inline-block; height:20px; margin-left:10px; background:url(https://www.welchon.com/web/resources/images/sub/star_bar_i.png) no-repeat left top; vertical-align:middle; }
+#bbsListWrap_type02 .item .pointStar .half { background:url(https://www.welchon.com/web/resources/images/sub/starH.png) left top; }
+ */
+#bbsListWrap_type02 .item .event { position:relative; padding:3px 30px 3px 18px; border-top:1px solid #dedede; background: url(https://www.welchon.com/web/resources/images/sub/moreArr.png) no-repeat right top; z-index:5; white-space: nowrap; text-overflow: ellipsis;overflow: hidden;}
+#bbsListWrap_type02 .item:hover .event { background:#efefef}
+#bbsListWrap_type02 .item .event .moreArr { vertical-align:middle; float:right; margin-top:8px; }
+#bbsListWrap_type02 .item .eventList { position:absolute; bottom:0px; left:0px; width:90%; padding:5% 5%; background:#fff; border-top:1px solid #dedede; display:none;}
+#bbsListWrap_type02 .item .eventList li { margin-left:10px; list-style-type:disc; margin-bottom:5px;}
+
+
+/* 181004 異붽� */
+.view_contents .con2 .view_section .detail_con img{max-width:100%;}
+.view_contents .con2 .view_section .btn{text-align:center; margin-bottom:60px;}
+.view_contents .con2 .view_section .btn a{display:inline-block; padding:15px 0; width:160px; background:#6650a6; color:#fff; font-family:"NSB"; font-size:18px;}
+/* 181004 �걹 */
+
+
+
+
+/* view page list(type1) */
+.travelList1.type1{margin-bottom:60px;}
+.travelList1.type1 li{width:235px; height:321px; margin:0 20px 0 0;}
+.travelList1 li:nth-child(3n){margin-right:0;}
+.travelList1.type1 li:nth-child(3n){margin-right:20px;}
+.travelList1.type1 li:nth-child(4n){margin-right:0;}
+.travelList1.type1 li:last-child{margin:0;}
+.travelList1.type1 li .imgWrap img{width:235px; height:135px;}
+.travelList1.type1 li a .conWrap{padding:18px 18px 14px; border:1px solid #dfdfdf;}
+.travelList1.type1 li a .conWrap .tit{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-bottom:5px; font-family:"NSB"; font-size:18px;}
+.travelList1.type1 li a .conWrap .txt{margin-bottom:12px; font-size:13px; color:#666; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap:break-word; line-height: 1.6em; height: 3.2em;}
+.travelList1.type1 li a .linkWrap p{width:116px; font-size:13px;}
+.travelList1.type1 li a .linkWrap p span{background-position:right 1px;}
+
+/* 
+.paging{margin-bottom:60px; text-align:center; font-size:0;}
+.paging a{display:inline-block; width:40px; padding:10px 0; margin:0 3px; border:1px solid #ccc; font-size:14px; text-align:center; vertical-align:middle;}
+.paging a.this{background-color:#808080; border:1px solid #808080; font-family:"NBGB"; color:#fff;}
+.paging a em{display:block; width:0; height:0; font-size:0; text-indent:-9999px;}
+.paging a.btn_start{margin:0; padding:19px 0; background:url(https://www.welchon.com/web/resources/images/travel/sub/fst_arr.gif) center center no-repeat; border-right:none;}
+.paging a.btn_prev{margin:0 10px 0 0; padding:19px 0; background:url(https://www.welchon.com/web/resources/images/travel/sub/prev_arr.gif) center center no-repeat;}
+.paging a.btn_next{margin:0 0 0 10px; padding:19px 0; background:url(https://www.welchon.com/web/resources/images/travel/sub/next_arr.gif) center center no-repeat;}
+.paging a.btn_end{margin:0; padding:19px 0; background:url(https://www.welchon.com/web/resources/images/travel/sub/lst_arr.gif) center center no-repeat; border-left:none;}
+ */
+
+/*  */
+.view_tit{overflow:hidden; margin:60px 0 36px; padding-bottom:13px; border-bottom:3px solid #797b7e;}
+.view_tit > p{float:left; font-family:"NSB"; font-size:28px;}
+.view_tit div{float:right;}
+.view_tit div p{float:left; margin:12px 30px 0 0; font-size:15px;}
+.view_tit div p span.name{position:relative; padding-right:14px; margin-right:14px;}
+.view_tit div p span.name:before{content:""; display:block; position:absolute; top:2px; right:0; width:1px; height:13px; background-color:#bfbfbf;}
+.view_tit div p span.tel{padding-left:17px; background:url(https://www.welchon.com/web/resources/images/travel/sub/tel_ico.gif) 0 2px no-repeat;}
+.view_tit div a{display:block; float:left; width:116px; padding:10px 0; border:1px solid #6650a6; font-family:"NBGB"; font-size:15px; color:#6650a6; text-align:center;}
+
+.view_contents .con1{overflow:hidden; margin-bottom:40px;}
+.view_contents .con1 .conWrap{float:left; width:428px;}
+.view_contents .con1 .conWrap .state{margin-bottom:30px; padding-bottom:21px; border-bottom:1px solid #dfdfdf; font-size:0;}
+.view_contents .con1 .conWrap .state span{display:inline-block; margin-right:10px; padding:7px 12px; font-size:14px; color:#fff;}
+.view_contents .con1 .conWrap .state span:last-child{margin-right:0;}
+.view_contents .con1 .conWrap .state span.v1{background-color:#45484e;}
+.view_contents .con1 .conWrap .state span.v2{background-color:#2e5d9c;}
+.view_contents .con1 .conWrap .state span.v3{background-color:#00875f;}
+.view_contents .con1 .conWrap ul{margin-bottom:29px;}
+.view_contents .con1 .conWrap ul li{margin-bottom:37px; font-size:15px;}
+.view_contents .con1 .conWrap ul li:last-child{margin-bottom:0;}
+.view_contents .con1 .conWrap ul li span{position:relative; margin-right:13px; padding-right:13px; color:#787878;}
+.view_contents .con1 .conWrap ul li span:after{content:""; display:block; position:absolute; top:2px; right:0; width:1px; height:13px; background-color:#bfbfbf;}
+.view_contents .con1 .conWrap ul li b{font-family:"NSB"; font-size:24px; color:#e14462;}
+.view_contents .con1 .conWrap .btn{display:block; height:16px; padding:18px 0; background-color:#6650a6; font-family:"NSB"; font-size:18px; color:#fff; text-align:center;}
+.view_contents .con1 .conWrap .btn span{padding-left:23px; background:url(https://www.welchon.com/web/resources/images/travel/sub/reserve_ico.png) 0 1px no-repeat;}
+.view_contents .con1 .imgWrap{float:right; width:532px;}
+.view_contents .con1 .imgWrap img{width:100%; height:300px;}
+
+.view_contents .con2 .state_wrap{margin-bottom:60px; background-color:#fafafa; border:1px solid #dfdfdf;}
+.view_contents .con2 .state_wrap .tag_state{overflow:hidden; padding:20px 29px;}
+.view_contents .con2 .state_wrap .tag_state a{display:block; float:left; margin:7px 10px 7px 0; padding:9px 13px 8px; border:1px solid #225292; border-radius:25px; font-size:14px; color:#225292;}
+.view_contents .con2 .state_wrap .cat_state{padding:30px 29px; background-color:#fff; border-left:1px solid #ebebeb;}
+.view_contents .con2 .state_wrap .cat_state ul{overflow:hidden;}
+.view_contents .con2 .state_wrap .cat_state ul li{float:left; display:table; width:calc(50% - 25px); margin:15px 50px 0 0;}
+.view_contents .con2 .state_wrap .cat_state ul li:first-child{margin-top:0px;}
+.view_contents .con2 .state_wrap .cat_state ul li:nth-child(2){margin-top:0px;}
+.view_contents .con2 .state_wrap .cat_state ul li:nth-child(2n){margin-right:0px;}
+.view_contents .con2 .state_wrap .cat_state ul li img{display:table-cell; margin-right:12px; width:60px; height:60px; vertical-align:middle;}
+.view_contents .con2 .state_wrap .cat_state ul li p{display:table-cell; width:100%; vertical-align:middle;}
+.view_contents .con2 .state_wrap .cat_state ul li p span{position:relative; display:inline-block; width:105px; margin-right:12px;}
+.view_contents .con2 .state_wrap .cat_state ul li p span:after{content:""; display:block; position:absolute; top:1px; right:0; width:1px; height:13px; background-color:#bfbfbf;}
+.view_contents .con2 .view_section > .tit{margin-bottom:20px; padding-left:22px; background:url(https://www.welchon.com/web/resources/images/travel/sub/tit_dot01.gif) 0 5px no-repeat; font-family:"NSB"; font-size:24px;}
+.view_contents .con2 .view_section .box_con{margin-bottom:60px;}
+.view_contents .con2 .view_section .box_con ul{overflow:hidden;}
+.view_contents .con2 .view_section .box_con ul li{float:left; width:485px; margin-left:30px;}
+.view_contents .con2 .view_section .box_con ul li:first-child{margin-left:0;}
+.view_contents .con2 .view_section .box_con ul li > p{padding:20px 0 20px 20px; font-family:"NBGB"; font-size:16px; color:#fff;}
+.view_contents .con2 .view_section .box_con ul li > p.type1{background-color:#028396;}
+.view_contents .con2 .view_section .box_con ul li > p.type2{background-color:#384863;}
+.view_contents .con2 .view_section .box_con ul li div{overflow-y:scroll; height:100px; padding:20px; border:1px solid #dfdfdf; border-top:none;}
+.view_contents .con2 .view_section .addr_con{margin-bottom:60px; border:1px solid #dfdfdf;} /**/
+.view_contents .con2 .view_section .addr_con .addr_txt{padding:30px; border-bottom:1px solid #dfdfdf;}
+.view_contents .con2 .view_section .addr_con .addr_txt ul{overflow:hidden;}
+.view_contents .con2 .view_section .addr_con .addr_txt ul li{float:left; margin-right:50px; padding-left:15px; background:url(https://www.welchon.com/web/resources/images/travel/sub/addr_ico.gif) 0 12px no-repeat; font-size:16px;}
+.view_contents .con2 .view_section .addr_con .addr_txt ul li a{display:inline-block; margin-left:15px; padding:10px 23px; border:1px solid #6650a6; font-family:"NBGB"; font-size:15px; color:#6650a6; text-align:center;}
+.view_contents .con2 .view_section .addr_con #map{position:relative; padding-top:56.25%; margin-top:10px; max-width:100%; height:0px; background:#eee;}
+
+.place{overflow:hidden; padding:40px 0; margin-bottom:60px; background-color:#fafafa; border:1px solid #dfdfdf;}
+.place .slide{width:744px; margin:0 auto; border:1px solid #ccc;}
+.place .slide ul li img{width:744px; height:418px;}
+.place .slide .flex-direction-nav li a{width:60px; height:119px; opacity:1; text-indent:-9999px; font-size:0;}
+.place .slide .flex-direction-nav li a:before{display:none !important;}
+.place .slide .flex-direction-nav li a.flex-prev{left:-127px; background:url(https://www.welchon.com/web/resources/images/travel/sub/prev_arr_btn.gif) 0 0 no-repeat;}
+.place .slide .flex-direction-nav li a.flex-next{right:-127px; background:url(https://www.welchon.com/web/resources/images/travel/sub/next_arr_btn.gif) 0 0 no-repeat;}
+/*
+.place .flexslider:hover .flex-direction-nav .flex-prev {opacity:inherit !important; left:0;}
+.place .flexslider:hover .flex-direction-nav .flex-prev:hover {opacity:inherit !important;}
+.place .flexslider:hover .flex-direction-nav .flex-next {opacity:inherit !important; right:0;}
+.place .flexslider:hover .flex-direction-nav .flex-next:hover {opacity:inherit !important;}
+.place .flex-direction-nav .flex-disabled{opacity:1 !important; z-index:0;}
+*/
+
+.place .pager_slide{margin:20px 126px 0; border:none; background-color:#fafafa;}
+.place .pager_slide .slides li{width:178px;}
+.place .pager_slide .slides li.flex-active-slide{position:relative;}
+.place .pager_slide .slides li.flex-active-slide:before{display:block; content:""; position:absolute; top:0; left:0; width:168px; height:90px; border:5px solid #e29200; z-index:1;}
+.place .pager_slide .slides li.flex-active-slide:after{display:block; content:""; position:absolute; top:0; left:0; width:178px; height:100px; background-color:#000; opacity:0.3;}
+.place .pager_slide .slides li img{width:177px; height:99px; border:1px solid #ccc;}
+.place .pager_slide .flex-direction-nav{display:none;}
+/* .place .pager_slide .flex-direction-nav li a{display:block; width:69px; height:69px; text-indent:-9999px; font-size:0;}
+.place .pager_slide .flex-direction-nav li a.flex-prev{background:url(https://www.welchon.com/web/resources/images/travel/sub/prev_arr_btn.png) 0 0 no-repeat;} */
+
+/*  */
+h4.mT30{display:none;}
+table.type03{width:100%; table-layout:fixed; font-size:12px;}
+table.type03 th{padding:12px 0; background-color:#8898b2; font-family:"NBGB"; font-weight:normal; font-size:14px; color:#fff;}
+table.type03 th.bdt{border-top:1px solid #fff;}
+table.type03 th.bdb{border-bottom:1px solid #fff;}
+table.type03 td{padding:16px 0; border-bottom:1px solid #cdd3e1; text-align:center;}
+table.type03 td.bdt{border-top:1px solid #cdd3e1;}
+table.type03 td.bdr{border-right:1px solid #cdd3e1;}
+table.type03 td.bdb{border-bottom:1px solid #cdd3e1;}
+table.type03 td.bdl{border-left:1px solid #cdd3e1;}
+table.type03 td.left{padding-left:10px; text-align:left;}
+table.type03 td.con{padding-left:10px; text-align:left;}
+table.type03 td a{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px;}
+table.type03 td a.del{padding:3px 10px; border:1px solid #ddd; border-radius:3px; font-size:12px; font-family:"NBGB";}
+table.type03 td .review_con{overflow:hidden;}
+table.type03 td .review_con .imgWrap{float:left; width:250px; height:136px;}
+table.type03 td .review_con .imgWrap img{width:100% !important; height:100%;}
+table.type03 td .review_con .txtWrap{margin-left:266px;}
+table.type03 td .review_con .txtWrap p.tit{margin-bottom:15px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-family:"NBGB"; font-size:16px;}
+table.type03 td .review_con .txtWrap p.txt{overflow:hidden; height:63px; margin-bottom:15px; white-space:initial;}
+table.type03 td .review_con .txtWrap div span{margin-right:15px;}
+table.type03 td .review_con .txtWrap div span b{font-family:"NGB";}
+
+.btn_type01{margin:10px 0 30px;}
+.btn_type01 .right{text-align:right;}
+.btn_type01 a{display:inline-block; width:80px; padding:8px 0; border:1px solid #ccc; text-align:center;}
+
+#footer{height:161px; border-top:1px solid #ccc;}
+.f_wrap{overflow:hidden; position:relative; width:1000px; margin:0 auto;}
+.f_wrap .txt{float:left; margin-top:34px;}
+.f_wrap .txt p{font-size:13px; line-height:24px;}
+.f_wrap .txt p span{display:block; color:#999;}
+.f_wrap .logo{float:right; margin-top:20px;}
+.f_wrap .logo a{display:block; border:1px solid #dfdfdf;}
+.f_wrap .logo a:first-child{border-bottom:none;}
+
+@media only screen and (max-width:768px) {
+	
+	.hide{display:none;}
+
+	.h_wrap{width:auto; padding:0 2%;}
+	.h_wrap h1{}
+	.h_wrap h1 img{height:35px;}
+	.h_wrap h2{top:20px;}
+	.h_wrap .sns{margin-right:110px;}
+	.h_wrap .sns a{margin-left:12px;}
+	
+
+	.contents{width:auto; padding:0 2%;}
+	.visual .bx-wrapper{width:auto; height:auto;}
+	.visual .bx-viewport{width:auto; height:auto !important; min-width:inherit;}
+	.visual ul li a{display:block; width:auto;}
+	.visual ul li a img{display:block; max-width:100%;}
+
+	#travel-bx-pager{display:none;}
+
+	.tag{text-align:center;}
+	.tag p{float:none; margin:0 0 10px 0; font-size:20px;}
+	.tag ul{float:none; width:auto;}
+	.tag ul li{display:inline-block; float:none; margin:5px 0;}
+	.tag ul li a{padding:7px 11px 6px; font-family:"NBG"; font-size:14px;}
+
+	.sortWrap3{padding:20px 20px 40px;}
+	.myselect2{table-layout:inherit;}
+	.myselect2 tr{display:block; margin-bottom:10px;}
+	.myselect2 tr:last-child{margin-bottom:0;}
+	.myselect2 th{display:block; background:none;}
+	.myselect2 td{display:block; padding:0;}
+	.myselect2 td select{width:35%;}
+	.myselect2 td ul li{margin:3px;}
+	.myselect2 td.sch{position:relative; padding:10px; text-align:left;}
+	.myselect2 td.sch span{display:block; margin:0 77px 0 84px;}
+	.myselect2 td.sch span input[type="text"]{width:100%;}
+	.myselect2 td.sch input[type="submit"]{position:absolute; top:10px; right:10px; width:60px;}
+	.myselect2 td.sch select{position:absolute; top:10px; left:10px; width:80px;}
+	.myselect2 td ul li.form{width:100%; margin:10px 0 0; clear:both;}
+	.myselect2 td ul li.form input{width:20%;}
+
+	#subSearchWrap ul li{margin:6px;}
+	#subSearchWrap ul li.chk_clear{margin:6px;}
+
+	.tab ul li{width:14%; margin:0 2px;}
+	.tab ul li a{width:100%; font-family:"NBG"; font-size:15px;}
+	.tab ul li.on a{font-family:"NBGB";}
+
+	.list_opt{text-align:center;}
+	.list_opt p{float:none; margin-bottom:10px;}
+	.list_opt div{float:none;}
+	.list_opt div a{display:inline-block; float:none; margin-left:4px; padding-left:12px; background-position:0 2px; font-size:14px;}
+
+	.travelList1 li{width:49%; height:auto; margin:0 0 2% 0;}
+	.travelList1 li:nth-child(odd){margin-right:2%;}
+	.travelList1 li a .imgWrap{position:relative; padding-top:56.25%;}
+	.travelList1 li a .imgWrap img{position:absolute; top:0; width:100%; height:100%;}
+	.travelList1 li a .imgWrap span{width:65px; font-size:13px;}
+	.travelList1 li a .conWrap{padding:15px 15px 10px;}
+	.travelList1 li a .conWrap .tit{font-family:"NBGB"; font-size:16px;}
+	.travelList1 li a .conWrap .txt{font-size:13px;}
+	.travelList1 li a .linkWrap p{width:49%; font-size:13px;}
+	.travelList1 li a .linkWrap p:first-child{width:50%;}
+	.travelList1 li a .linkWrap p span{background-position:right 2px;}
+	.travelList1.type1 li{width:49%; height:auto; margin:0 0 2% 0;}
+	.travelList1.type1 li:nth-child(odd){margin-right:2%;}
+	.travelList1.type1 li .imgWrap{position:relative; padding-top:56.25%;}
+	.travelList1.type1 li .imgWrap img{position:absolute; top:0; width:100%; height:100%;}
+	.travelList1.type1 li a .conWrap .tit{font-family:"NBGB"; font-size:16px;}
+	.travelList1.type1 li a .conWrap .txt{font-size:13px;}
+	.travelList1.type1 li a .linkWrap p{width:49%;}
+	.travelList2 > li{width:49%; margin:0 0 2% 0;}
+	.travelList2 > li:nth-child(odd){margin-right:2%;}
+	.travelList2 > li:nth-child(3n){margin-bottom:2%;}
+	.travelList2 > li a .imgWrap{position:relative; padding-top:56.25%;}
+	.travelList2 > li a .imgWrap img{position:absolute; top:0; width:100%; height:100%;}
+	
+	.paging a{width:27px; padding:7px 0 5px; margin:0 2px; border:none; font-size:13px;}
+	.paging a.btn_start{padding:14px 0 13px;}
+	.paging a.btn_prev{padding:14px 0 13px;}
+	.paging a.btn_next{padding:14px 0 13px;}
+	.paging a.btn_end{padding:14px 0 13px;}
+
+	.view_tit > p{margin-top:7px; font-size:20px;}
+
+	.view_contents .con1 .conWrap{float:none; width:auto; margin-bottom:15px;}
+	.view_contents .con1 .imgWrap{float:none; width:auto;}
+	.view_contents .con1 .imgWrap img{height:auto;}
+	.view_contents .con2 .state_wrap .tag_state{overflow:hidden; float:none; width:auto; padding:10px; border-bottom:1px solid #dfdfdf; font-size:0; text-align:center;}
+	.view_contents .con2 .state_wrap .tag_state a{display:inline-block; float:none; margin:3px; padding:7px 10px 6px; font-size:13px;}
+	.view_contents .con2 .state_wrap .cat_state{float:none; width:auto; padding:10px; border-left:none;}
+	.view_contents .con2 .state_wrap .cat_state ul li{display:inherit; width:50%; margin:0 0 2% 0;}
+	.view_contents .con2 .state_wrap .cat_state ul li:nth-child(3n){margin:0 0 2% 0;}
+	.view_contents .con2 .state_wrap .cat_state ul li:nth-child(7),
+	.view_contents .con2 .state_wrap .cat_state ul li:nth-child(8){margin:0 0 2% 0;}
+	.view_contents .con2 .state_wrap .cat_state ul li img{float:left; width:45px; height:45px; margin-right:10px;}
+	.view_contents .con2 .state_wrap .cat_state ul li p{width:292px; padding:15px 0;}
+	.view_contents .con2 .state_wrap .cat_state ul li p span{width:75px;}
+
+	.view_contents .con2 .view_section .box_con ul li{width:49%; margin-left:2%;}
+	.view_contents .con2 .view_section .box_con ul li:first-child{margin-left:0;}
+	.view_contents .con2 .view_section .box_con ul li p{padding:13px 0 13px 20px;}
+	.view_contents .con2 .view_section .img_con img{width:100%;}
+
+	.view_contents .con2 .view_section .addr_con .addr_txt{padding:20px;}
+	.view_contents .con2 .view_section .addr_con .addr_txt ul li{float:none; margin:5px 0;}
+	
+	.place{padding:20px;}
+	.place .slide{width:auto; background-color:#fafafa; border:1px solid #fafafa; -webkit-border-radius:inherit; border-radius:inherit;}
+	.place .slide ul li img{width:100%; height:auto;}
+	.place .slide .flex-direction-nav li a{width:30px; height:59px; background-size:100% !important;}
+	.place .slide .flex-direction-nav li a.flex-prev{left:0;}
+	.place .slide .flex-direction-nav li a.flex-next{right:0;}
+	.place .pager_slide{margin:20px 0 0;}
+	
+	/*  */
+	table.type03 td.con{text-align:center;}
+	table.type03 td .review_con .imgWrap{float:none; display:inline-block; margin-bottom:10px;}
+	table.type03 td .review_con .txtWrap{margin:0; text-align:left;}
+
+	.f_wrap{width:auto; padding:2%;}
+	.f_wrap .txt{float:none; margin-top:0;}
+	.f_wrap .logo{overflow:hidden; float:none;}
+	.f_wrap .logo a{float:left;}
+	.f_wrap .logo a:first-child{border-bottom:1px solid #dfdfdf; border-right:none;}
+	.f_wrap .logo a img{height:42px;}
+}
+
+@media only screen and (max-width:540px) {
+
+	.view_contents .con2 .state_wrap .cat_state ul li p{width:85px; padding:5px 0; text-align:center;}
+	.view_contents .con2 .state_wrap .cat_state ul li p span{display:block; margin:0 0 5px 0; width:auto; font-family:"NBGB";}
+	.view_contents .con2 .state_wrap .cat_state ul li p span:after{display:none;}
+}
+
+@media only screen and (max-width:480px) {
+
+	#header{height:auto;}
+	.h_wrap{text-align:center;}
+	.h_wrap h1{float:none;}
+	.h_wrap h1 img{height:40px;}
+	.h_wrap h2{position:static; display:inline-block; float:none; margin:3px 0 0 14px; vertical-align:top;}
+	.h_wrap .sns{display:inline-block; float:none; margin:20px 0; text-align:center; clear:both;}
+	.h_wrap .sns a{display:inline-block; float:none;}
+
+	.view_contents .con2 .view_section .box_con ul li{float:none; width:auto; margin:0 0 15px 0;}
+	.view_contents .con2 .view_section .box_con ul li:first-child{margin-left:0;}
+	.view_contents .con2 .view_section .box_con ul li p{padding:13px 0 13px 20px;}
+
+	.view_contents .con2 .view_section .addr_con .addr_txt ul li{background-position:0 8px; font-size:15px;}
+	.view_contents .con2 .view_section .addr_con .addr_txt ul li a{margin-left:5px; padding:7px 5px; font-size:12px;}
+	
+	.paging a{width:20px; padding:4px 0 2px; font-size:12px;}
+	.paging a.btn_start,
+	.paging a.btn_prev,
+	.paging a.btn_next,
+	.paging a.btn_end{padding:10px 0;}
+	
+	/*  */
+	table.type03 td .review_con .imgWrap{display:initial; width:auto;}
+	table.type03 td .review_con .txtWrap p.tit{font-size:14px;}
+}
+@media only screen and (max-width:420px) {
+
+	.travelList1 li{width:100%;}
+	.travelList1 li:nth-child(odd){margin-right:0;}
+	.travelList1.type1 li{width:100%;}
+	.travelList1.type1 li:nth-child(odd){margin-right:0;}
+	.travelList2 > li{width:100%; height:415px;}
+	.travelList2 > li:nth-child(odd){margin-right:0;}
+
+	.view_tit > p{float:none; margin-top:0;}
+	.view_tit div{float:none;}
+	.view_tit div p{margin:10px 30px 0 0; font-size:13px;}
+	.view_tit div a{width:75px; padding:7px 0; font-size:12px;}
+	
+}
+@media only screen and (max-width:380px) {
+
+	.list_opt div a{font-size:11px;}
+	
+	.myselect2 td ul li.form input{width:18%;}
+	
+	.paging a{width:16px; padding:3px 0 0;}
+}

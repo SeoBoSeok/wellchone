@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+#container{}
+
+h2{letter-spacing:-1px}
+
+.visual{position:relative; opacity:0; height:auto}
+.visual.open{opacity:1; transition:all 0.35s 0.1s linear}
+.visual .bx-wrapper{width:100%; height:auto}
+.visual .bx-viewport{width:100%}
+.visual .bx-viewport > ul{z-index:1}
+.visual .bx-viewport > ul:after{display:block; content:""; clear:both}
+.visual .bx-viewport > ul li{height:auto}
+.visual .bx-viewport > ul li .content{position:relative}
+.visual .bx-viewport > ul li .txtWrap{position:absolute; bottom:24px; left:0; z-index:1; width:100%; padding:0 16px; box-sizing:border-box}
+.visual .bx-viewport > ul li .txtWrap .loc{color:#fff; font-size:13px}
+.visual .bx-viewport > ul li .txtWrap .tit{color:#fff; font-size:20px; font-family:'NSB'; letter-spacing:-0.030em; line-height:1.5; word-break:keep-all}
+.visual .bx-viewport > ul li .txtWrap .tag{overflow:hidden; padding-top:16px; margin-top:16px; border-top:0px solid rgba(255, 255, 255, 0.5)}
+.visual .bx-viewport > ul li .txtWrap .tag li{float:left}
+.visual .bx-viewport > ul li .txtWrap .tag li a{position:relative; margin-right:4px; color:#fff; font-size:13px}
+.visual .bx-viewport > ul li .txtWrap .tag li a::before{content:'#'}
+.visual .bx-viewport > ul li .txtWrap .tag li:not(:last-child) a::after{content:','}
+.visual .bx-viewport > ul li .imgWrap{position:relative}
+.visual .bx-viewport > ul li .imgWrap a{display:block; position:relative; padding-top:42%; height:0}
+/*.visual .bx-viewport > ul li .imgWrap a::after{content:""; display:block; position:absolute; top:0; left:50%; width:100%; height:100%; margin-left:-50%; background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)}*/
+.visual .bx-viewport > ul li .imgWrap a::after{content:""; display:block; position:absolute; top:0; left:50%; width:100%; height:100%; margin-left:-50%}
+.visual .bx-viewport > ul li .imgWrap img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.visual .bx-controls{position:absolute; top:0px; width:100%; height:100%}
+.visual .bx-controls .bx-controls-direction{}
+.visual .bx-controls .bx-prev{top:calc(50% - 0px); left:0px; z-index:10; transform:translateY(-50%); width:34px; height:34px; background:url(/images/main/m_movebtn.png) no-repeat center rgba(0, 0, 0, 0.5); font-size:0px}
+.visual .bx-controls .bx-next{top:calc(50% - 0px); right:0px; z-index:10; transform:translateY(-50%) rotate(180deg); width:34px; height:34px; background:url(/images/main/m_movebtn.png) no-repeat center rgba(0, 0, 0, 0.5); font-size:0px}
+.visual .bx-controls .bx-controls-auto{display:none}
+.visual .bx-controls .bx-pager{position:absolute; z-index:10; top:16px; bottom:inherit; right:16px; padding:6px 12px 4px 12px; background:rgba(0, 0, 0, 0.5); color:#fff; font-size:13px; font-family:'NBG'; font-weight:500; letter-spacing:-1px; border-radius:12px; line-height:14px}
+.visual .keyword{position:relative; z-index:1; padding:16px 10px; background:#fff}
+.visual .keyword::after{content:''; display:block; clear:both}
+.visual .keyword p{color:#333; font-family:'NBGB'}
+.visual .keyword p span{color:#e14462}
+.visual .keyword ul{margin-top:10px}
+.visual .keyword ul li{float:left; margin-top:6px; margin-right:6px}
+.visual .keyword ul li a{display:block; padding:5px 10px; background:#f5f5f5; border:1px solid #ddd; color:#666; font-size:13px; font-family:'NBGB'; text-align:center}
+.visual .keyword ul li a span{margin-right:3px; color:#0095a6}
+.visual .visual_bg{display:none; overflow:hidden; position:absolute; top:0px; left:50%; transform:translateX(-50%); width:100%; height:400px}
+.visual .visual_bg img{width:800px}
+
+/* 배너/바로가기 영역 */
+.shortcut{opacity:0; padding:32px 16px}
+.shortcut.open{opacity:1; transition:all 0.35s 0.2s linear}
+.shortcut ul{overflow:hidden}
+.shortcut ul li{float:left; width:calc(20% - 48.1px/5); margin-left:12px}
+.shortcut ul li:first-child{margin-left:0}
+.shortcut ul li a{display:block; text-align:center}
+.shortcut ul li img{width:100%; max-width:200px; border:2px solid #ddd; border-radius:25%; box-sizing:border-box}
+.shortcut ul li span{display:block; margin-top:12px; color:#555; line-height:1.5}
+.banner{opacity:0; padding:16px; padding-right:0; padding-bottom:55px; background:#f5f9fa}
+.banner.open{opacity:1; transition:all 0.35s 0.2s linear}
+.banner ul{}
+.banner ul li .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:45%; border-radius:8px}
+.banner ul li .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%}
+.banner .bx-viewport{z-index:1}
+.banner .bx-controls{position:absolute; bottom:-35px; left:50%; transform:translateX(-50%); width:50%; max-width:200px; height:20px}
+.banner .bx-controls-direction a{top:2px; width:10px; height:16px; background:url(/images/main/heritage_slide_set.png) no-repeat 0 0; font-size:0px}
+.banner .bx-controls-direction .bx-prev{left:0}
+.banner .bx-controls-direction .bx-next{right:0; background-position:-10px 0}
+.banner .bx-controls-direction a:hover{background-position-y:-16px}
+.banner .bx-controls .bx-pager{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:16px; color:#959595; font-size:16px; font-family:'NBG'; font-weight:500}
+.banner .bx-controls .bx-pager::first-letter{color:#1f9970}
+
+/* 지역별 추천 */
+.recommend{padding:32px 16px; padding-right:0}
+.recommend .right p{display:none}
+.recommend .right img{width:100%}
+.recommend .right .btn{position:relative; z-index:1; margin:0 5%; margin-top:-24px; border-radius:15px; box-shadow:0px 4px 10px 0px rgba(0, 0, 0, 0.08)}
+.recommend .right .btn::after{content:''; display:block; clear:both}
+.recommend .right .btn a{float:left; width:50%; padding:16px; background:url(/images/main/recommend_arr.png) no-repeat right 20px center #fff; color:#555; font-size:13px; box-sizing:border-box}
+.recommend .right .btn a:first-child{border-right:1px solid #eee; border-radius:15px 0 0 15px}
+.recommend .right .btn a:last-child{border-radius:0 15px 15px 0}
+.recommend .left{margin-top:32px}
+.recommend .left .tit h2{font-size:16px; font-family:'NBGB'; font-weight:500}
+.recommend .left .tit p{margin-top:10px; color:#555; font-size:13px}
+.recommend .left .bx-wrapper{padding-top:20px}
+.recommend .left ul{}
+.recommend .left ul li{}
+.recommend .left ul li a{display:block}
+.recommend .left ul li .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:120%; border-radius:8px}
+.recommend .left ul li .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.recommend .left ul li .img span{position:absolute; bottom:12px; left:12px; padding:5px 10px; background:rgba(0, 0, 0, 0.6); color:#fff; font-size:13px; border-radius:12px; line-height:14px}
+.recommend .left ul li .txt{}
+.recommend .left ul li .txt span{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:15px; color:#1f9999; font-size:13px; line-height:16px}
+.recommend .left ul li .txt p{margin-top:10px; color:#555; font-size:14px}
+.recommend .left .more{display:block; position:relative; width:35%; padding:12px 35px 12px 16px; margin:0 auto; margin-top:24px; border:1px solid #eee; color:#555; font-size:13px; box-shadow:0px 2px 4px 0px rgba(0, 0, 0, 0.04); border-radius:20px; line-height:14px}
+.recommend .left .more::before{content:''; position:absolute; top:18px; right:16px; width:12px; height:2px; background:rgba(79, 175, 175, 0.5)}
+.recommend .left .more::after{content:''; position:absolute; top:13px; right:21px; width:2px; height:12px; background:rgba(79, 175, 175, 0.5)}
+
+/* 여행이야기 */
+.travel_story{padding:30px 16px; background:#f5f9fa}
+.travel_story .inner{position:relative}
+.travel_story .tit{}
+.travel_story .tit h2{font-size:16px; font-family:'NBGB'; font-weight:500}
+.travel_story .tit p{margin-top:10px; color:#555; font-size:13px}
+.travel_story ul{margin-top:24px}
+.travel_story ul li{}
+.travel_story ul li:not(:first-child){margin-top:8px}
+.travel_story ul li a{display:block; overflow:hidden; position:relative}
+.travel_story ul li a .img{overflow:hidden; position:relative; width:25%; height:0; padding-top:25%; border-radius:8px}
+.travel_story ul li a .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.travel_story ul li a .txt{position:absolute; top:50%; right:0; transform:translateY(-50%); width:calc(100% - (25% + 16px))}
+.travel_story ul li a .txt p{overflow:hidden; height:42px; color:#555; font-size:14px; line-height:1.5}
+.travel_story ul li a .txt span{display:none}
+.travel_story ul li a .txt b{display:block; margin-top:10px; color:#1f9999; font-size:13px; font-weight:500}
+.travel_story .more{display:block; position:relative; width:35%; padding:12px 35px 12px 16px; margin:0 auto; margin-top:24px; background:#fff; border:1px solid #eee; color:#555; font-size:13px; box-shadow:0px 2px 4px 0px rgba(0, 0, 0, 0.04); border-radius:20px; line-height:14px}
+.travel_story .more::before{content:''; position:absolute; top:18px; right:16px; width:12px; height:2px; background:rgba(79, 175, 175, 0.5)}
+.travel_story .more::after{content:''; position:absolute; top:13px; right:21px; width:2px; height:12px; background:rgba(79, 175, 175, 0.5)}
+
+/* 농촌여행정보 */
+.travel_info{padding:30px 16px}
+.travel_info .inner{}
+.travel_info .tit{}
+.travel_info .tit h2{font-size:16px; font-family:'NBGB'; font-weight:500}
+.travel_info .tit p{margin-top:10px; color:#555; font-size:13px}
+.travel_info .left{}
+.travel_info .left ul{overflow:hidden; margin-top:24px}
+.travel_info .left ul li{float:left; width:calc(50% - 4px); margin-left:8px}
+.travel_info .left ul li:nth-child(2n-1){margin-left:0}
+.travel_info .left ul li:nth-child(n+3){margin-top:20px}
+.travel_info .left ul li a{display:block}
+.travel_info .left ul li a .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:56.25%; border-radius:8px}
+.travel_info .left ul li a .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%}
+.travel_info .left ul li a .img span{position:absolute; bottom:12px; left:12px; padding:5px 10px; background:rgba(0, 0, 0, 0.6); color:#fff; font-size:13px; border-radius:12px; line-height:14px}
+.travel_info .left ul li a .txt{}
+.travel_info .left ul li a .txt p{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:16px; color:#555; font-size:14px}
+.travel_info .left ul li a .txt span{display:block; margin-top:10px; color:#959595; font-size:13px}
+.travel_info .left .more{display:block; position:relative; width:35%; padding:12px 35px 12px 16px; margin:0 auto; margin-top:24px; background:#fff; border:1px solid #eee; color:#555; font-size:13px; box-shadow:0px 2px 4px 0px rgba(0, 0, 0, 0.04); border-radius:20px; line-height:14px}
+.travel_info .left .more::before{content:''; position:absolute; top:18px; right:16px; width:12px; height:2px; background:rgba(79, 175, 175, 0.5)}
+.travel_info .left .more::after{content:''; position:absolute; top:13px; right:21px; width:2px; height:12px; background:rgba(79, 175, 175, 0.5)}
+
+/* 즐거운 여행, 아름다운 추억 */
+.memory{padding:30px 16px; padding-right:0; background:#f5f9fa}
+.memory .inner{}
+.memory .tit{}
+.memory .tit h2{font-size:16px; font-family:'NBGB'; font-weight:500}
+.memory .tit p{margin-top:10px; color:#555; font-size:13px}
+.memory .slide{margin-top:24px}
+.memory .slide .bx-wrapper{/* max-width:100% !important */}
+.memory ul{}
+.memory ul li{width:150px}
+.memory ul li a{display:block; overflow:hidden; position:relative; width:100%; height:0; padding-top:100%; border-radius:8px}
+.memory ul li a:hover::after{content:''; position:absolute; top:0; left:0; z-index:1; width:100%; height:100%; background:url(/images/main/memory_hover.png) no-repeat center center rgba(41, 150, 204, 0.5)}
+.memory ul li.four{overflow:hidden}
+.memory ul li.four a{float:left; width:calc(50% - 4px); padding-top:calc(50% - 4px); margin-left:8px}
+.memory ul li.four a:nth-child(2n-1){margin-left:0}
+.memory ul li.four a:nth-child(n+3){margin-top:8px}
+.memory ul li.four a:hover::after{background-size:40px 40px}
+.memory ul li a img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.memory .more{display:block; position:relative; width:35%; padding:12px 35px 12px 16px; margin:0 auto; margin-top:24px; background:#fff; border:1px solid #eee; color:#555; font-size:13px; box-shadow:0px 2px 4px 0px rgba(0, 0, 0, 0.04); border-radius:20px; line-height:14px}
+.memory .more::before{content:''; position:absolute; top:18px; right:16px; width:12px; height:2px; background:rgba(79, 175, 175, 0.5)}
+.memory .more::after{content:''; position:absolute; top:13px; right:21px; width:2px; height:12px; background:rgba(79, 175, 175, 0.5)}
+
+
+/* 메인 네비게이션 메뉴 */
+.remote_control{display:none}

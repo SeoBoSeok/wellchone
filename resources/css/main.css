@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+h2{letter-spacing:-1px}
+
+/* NEW css */
+.visual{opacity:0; position:relative}
+.visual.open{opacity:1; transition:all 0.7s 0.5s linear}
+.visual .bx-wrapper{left:50%; margin-left:-960px}
+.visual .bx-viewport{position:relative; z-index:2}
+.visual .bx-viewport > ul{position:relative; z-index:1}
+.visual .bx-viewport > ul:after{display:block; content:""; clear:both}
+.visual .bx-viewport > ul li .content{position:relative}
+.visual .bx-viewport > ul li .txtWrap{position:absolute; top:calc(50% - 15px); left:50%; z-index:1; transform:translateY(-50%); margin-left:-600px; width:600px}
+.visual .bx-viewport > ul li .txtWrap .loc{display:block; padding-left:35px; margin-bottom:25px; background:url(../../../images/main/visual_loc.png) no-repeat 0 0; color:#eee; font-size:28px; font-family:'NS'; letter-spacing:-0.030em}
+.visual .bx-viewport > ul li .txtWrap .tit{padding-bottom:45px; font-family:"NSB"; font-size:48px; color:#fff; letter-spacing:-0.045em; line-height:62px; word-break:keep-all}
+.visual .bx-viewport > ul li .txtWrap .txt{margin-top:10px; color:#fff; font-family:"NS"; font-size:26px; letter-spacing:-0.045em}
+.visual .bx-viewport > ul li .txtWrap .tag{overflow:hidden}
+.visual .bx-viewport > ul li .txtWrap .tag li{float:left; margin:0 8px 8px 0}
+.visual .bx-viewport > ul li .txtWrap .tag li a{display:block; position:relative; padding:9px 20px; background:#32a67f; border:2px solid #1f9970; color:#fff; font-size:18px; font-family:'NS'; text-align:center; border-radius:20px; letter-spacing:-0.030em; line-height:18px}
+.visual .bx-viewport > ul li .txtWrap .tag li a::before{content:'# '}
+.visual .bx-viewport > ul li .imgWrap{display:inline-block; vertical-align:top; max-height: 500px;}
+.visual .bx-viewport > ul li .imgWrap a{display:block; position:relative;}
+.visual .bx-viewport > ul li .imgWrap img{}
+.visual .keyword{position:absolute; z-index:3; bottom:0; left:50%; transform:translateX(-50%); padding:18px 0; width:100%; background:rgba(0, 0, 0, 0.3)}
+.visual .keyword div{margin:0 auto; width:1200px}
+.visual .keyword div::after{content:''; display:block; clear:both}
+.visual .keyword p{float:left; vertical-align:middle; width:120px; margin-right:32px; color:#fff; font-family:"NSB"; font-size:28px; line-height:36px; letter-spacing:-0.045em}
+.visual .keyword p span{color:#e14462}
+.visual .keyword ul{float:left; max-width:calc(100% - 160px)}
+.visual .keyword ul li{float:left; margin-left:15px}
+.visual .keyword ul li:first-child{margin-left:0px}
+.visual .keyword ul li a{display:block; text-align:center; padding:7px 15px; border:1px solid #fff; border-radius:20px; color:#fff; font-family:"NSB"; font-size:18px; line-height:20px; letter-spacing:-0.045em}
+.visual .bx-controls{overflow:hidden; position:absolute; bottom:-24px; left:50%; z-index:3; transform:translateX(-50%); width:200px; height:48px; padding:15px 0; background:#fff; border:2px solid #ddd; border-radius:24px; box-sizing:border-box}
+.visual .bx-controls .bx-controls-direction{float:left; margin-left:28px}
+.visual .bx-controls .bx-controls-direction a{display:inline-block; position:static; vertical-align:top; width:8px; height:14px; background:url(../../../images/main/visual_slide_set.png) no-repeat 0 0; font-size:0px}
+.visual .bx-controls .bx-controls-direction .bx-prev{}
+.visual .bx-controls .bx-controls-direction .bx-next{margin-left:16px; background-position-x:-8px}
+.visual .bx-controls .bx-controls-direction a:hover{background-position-y:-14px}
+.visual .bx-controls .bx-controls-auto{float:left; position:relative}
+.visual .bx-controls .bx-controls-auto .bx-start{margin:0 0 0 16px; width:10px; height:14px; background:url(../../../images/main/visual_slide_set.png) no-repeat -16px 0}
+.visual .bx-controls .bx-controls-auto .bx-stop{margin:0 0 0 16px; width:10px; height:14px; background:url(../../../images/main/visual_slide_set.png) no-repeat -26px 0}
+.visual .bx-controls .bx-controls-auto a.active{background-position-y:-14px}
+.visual .bx-controls .bx-pager{display:block; float:right; position:relative; margin-right:28px; color:#959595; font-size:16px; font-family:'NBG'; font-weight:500; line-height:16px}
+.visual .bx-controls .bx-pager::first-letter{color:#1f9970}
+.visual .pkg_logo{position:absolute; top:190px; right:60px; z-index:10}
+.visual .pkg_logo:hover::before{content:''; position:absolute; top:0; bottom:0; left:0; right:0; border-radius:50%; animation:pulse 2s infinite}
+.visual .pkg_logo:hover::after{content:''; position:absolute; top:0; bottom:0; left:0; right:0; border-radius:50%; animation:pulse 2s 0.5s infinite}
+@keyframes pulse {
+	0% {transform:scale(1); opacity:0.2; background:#fff}
+	100% {transform:scale(1.5); opacity:0; background:#fff}
+}
+
+/* 추천 농촌여행지 */
+.recommend{opacity:0; padding:60px 0}
+.recommend.open{opacity:1; transition:all 0.7s 1s linear}
+.recommend .inner{width:1200px; margin:0 auto}
+.recommend .left{float:left; width:100%; text-align:center}
+.recommend .left .tit{margin-top:20px}
+.recommend .left .tit h2{display:inline-block; padding:0 60px; background:url(../../../images/main/recommend.png) no-repeat right 2px; color:#333; font-size:40px; font-family:'NS'; font-weight:500; letter-spacing:-0.030em; line-height:42px}
+.recommend .left .tit h2 b{font-family:'NSB'}
+.recommend .left .tit p{margin-top:30px; color:#1f9970; font-size:24px; font-family:'NS'; letter-spacing:-0.030em}
+.recommend .left ul{overflow:hidden; margin-top:60px}
+.recommend .left ul li{float:left; width:calc(100%/3 - 12.1px); margin-left:18px}
+.recommend .left ul li:first-child{margin-left:0}
+.recommend .left ul li a{display:block}
+.recommend .left ul li .img{overflow:hidden; position:relative; width:100%; height:300px; border-radius:8px}
+.recommend .left ul li .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); min-width:100%; width: 100%;}
+.recommend .left ul li .img span{position:absolute; bottom:0; left:0; width:100%; padding:20px 0; background:rgba(0, 0, 0, 0.6); color:#fff; font-size:16px; text-align:center; box-sizing:border-box; transition:all 0.35s cubic-bezier(0.85, 0, 0.5, 1)}
+.recommend .left ul li a:hover .img span{padding:30px 0; background:rgba(31, 153, 112, 0.8); font-size:18px}
+.recommend .left ul li .txt{text-align:center}
+.recommend .left ul li .txt p{margin-top:30px; color:#333; font-size:24px; font-family:'NS'; letter-spacing:-0.030em}
+.recommend .left ul li .txt span{display:inline-block; padding-left:22px; margin-top:15px; background:url(../../../images/main/recommend_loc.png) no-repeat 0 0; color:#1f9970; font-size:14px; line-height:16px}
+.recommend .right{float:right; position:relative; width:312px; padding:48px; padding-right:0; text-align:center}
+.recommend .right::before{content:''; position:absolute; top:0; left:0; z-index:-1; width:calc((100vw - 1200px)/2 + 360px); height:100%; background:url(../../../images/main/recommend_pat.png) repeat 0 0; border-radius:8px 0 0 8px}
+.recommend .right p{margin-bottom:25px; color:#333; font-size:32px; font-family:'NS'; letter-spacing:-0.030em}
+.recommend .right p b{color:#1f9999; font-family:'NSB';}
+.recommend .right .btn{overflow:hidden; margin-top:30px}
+.recommend .right .btn a{float:left; position:relative; width:calc(50% - 4px); padding:12px 0; margin-left:8px; background:#555; color:#fff; font-size:14px; text-align:center; border-radius:20px; line-height:16px}
+.recommend .right .btn a:first-child{margin-left:0}
+.recommend .right .btn a::before{content:''; position:absolute; top:0; left:50%; width:0%; height:100%; background:#1f9970; border-radius:20px}
+.recommend .right .btn a:hover::before{left:0; width:100%; transition:all 0.35s cubic-bezier(0.85, 0, 0.5, 1)}
+.recommend .right .btn a span{position:relative}
+
+/* 국가중요농업유산 */
+.heritage_info{opacity:0; padding-top:20px;}
+.heritage_info.open{opacity:1; padding-top:0; transition:all 0.7s 0.5s linear}
+.heritage_info .inner{width:1200px; margin:0 auto}
+.heritage_info .left{float:left; position:relative; width:50%; height:260px; padding:40px 0; color:#fff; font-family:'NS'; letter-spacing:-0.030em}
+.heritage_info .left::before{content:''; position:absolute; top:0; right:0; z-index:-1; animation:animateBg 10s linear infinite; background-image:linear-gradient(90deg, #1f9970, #1f9999, #1f9970, #1f9999); background-size:300% 100%; width:100%; min-width:50vw; height:100%; border-radius:0 20px 20px 0}
+.heritage_info .left::after{content:''; position:absolute; top:0; right:60px; z-index:-1; width:100%; height:100%; background:url(../../../images/main/heritage_bg.png) no-repeat 0 0}
+@keyframes animateBg {
+  0% { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; }
+}
+.heritage_info .left .tit{margin-top:20px}
+.heritage_info .left .tit span{display:block; font-size:22px}
+.heritage_info .left .tit p{display:inline-block; padding-bottom:6px; margin-top:20px; border-bottom:2px solid #fff; font-size:36px; font-family:'NSB'}
+.heritage_info .left ul{overflow:hidden; margin-top:45px}
+.heritage_info .left ul li{float:left; margin-left:55px}
+.heritage_info .left ul li:first-child{margin-left:0}
+.heritage_info .left ul li p{font-size:18px;}
+.heritage_info .left ul li span{display:block; margin-top:15px; font-size:24px; letter-spacing:0}
+.heritage_info .left ul li span b{color:#ffff99; font-size:48px; font-weight:500}
+.heritage_info .right{float:right; position:relative; width:50%; height:260px; padding:40px 0;}
+.heritage_info .right::before{content:''; position:absolute; top:0; left:-40px; z-index:-2; width:100%; min-width:calc(50vw + 40px); height:100%; background:url(../../../images/main/heritage_bg2.jpg) no-repeat right 0 #f9faec}
+.heritage_info .right .slide{margin-left:-130px}
+.heritage_info .right .slide ul{}
+.heritage_info .right .slide ul li::after{content:''; display:block; clear:both}
+.heritage_info .right .slide ul li .img{float:left; position:relative; padding:10px; box-sizing:border-box}
+.heritage_info .right .slide ul li .img::before{content:''; position:absolute; top:0; bottom:0; left:0; right:0; border:1px solid #fff; border-radius:50%}
+.heritage_info .right .slide ul li .img div{overflow:hidden; position:relative; width:240px; height:240px; border:6px solid #fff; border-radius:50%; box-shadow:0 0 12px 4px rgba(0, 0, 0, 0.15); box-sizing:border-box}
+.heritage_info .right .slide ul li .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.heritage_info .right .slide ul li .txt{float:right; width:calc(100% - 320px); margin-top:20px}
+.heritage_info .right .slide ul li .txt span{color:#555; font-size:22px; font-family:'NS'; letter-spacing:-0.030em}
+.heritage_info .right .slide ul li .txt span b{color:#1f9970; font-family:'NSB';}
+.heritage_info .right .slide ul li .txt p{margin-top:20px; color:#333; font-size:36px; font-family:'NSB'; letter-spacing:-0.030em}
+.heritage_info .right .slide ul li .txt a{display:inline-block; width:140px; padding:10px 0; margin-top:30px; background:#fff; border:2px solid #ddd; font-size:14px; text-align:center; border-radius:20px; line-height:16px; box-sizing:border-box; transition:border 0.35s}
+.heritage_info .right .slide ul li .txt a:hover{border:2px solid #1f9999}
+.heritage_info .right .slide .bx-controls{position:absolute; bottom:20px; left:320px; width:140px; height:20px}
+.heritage_info .right .slide .bx-controls-direction a{top:2px; width:10px; height:16px; background:url(../../../images/main/heritage_slide_set.png) no-repeat 0 0; font-size:0px}
+.heritage_info .right .slide .bx-controls-direction .bx-prev{left:0}
+.heritage_info .right .slide .bx-controls-direction .bx-next{right:0; background-position:-10px 0}
+.heritage_info .right .slide .bx-controls-direction a:hover{background-position-y:-16px}
+.heritage_info .right .slide .bx-controls .bx-pager{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:16px; color:#959595; font-size:16px; font-family:'NBG'; font-weight:500}
+.heritage_info .right .slide .bx-controls .bx-pager::first-letter{color:#1f9970}
+
+/* 여행이야기 */
+.travel_story{padding:80px 0}
+.travel_story .inner{position:relative; width:1200px; margin:0 auto}
+.travel_story .tit{text-align:center}
+.travel_story .tit h2{display:inline-block; padding:0 60px; background:url(../../../images/main/travel_story.png) no-repeat right 2px; color:#333; font-size:40px; font-family:'NS'; font-weight:500; letter-spacing:-0.030em; line-height:42px}
+.travel_story .tit p{margin-top:30px; color:#1f9970; font-size:24px; font-family:'NS'; letter-spacing:-0.030em}
+.travel_story ul{margin-top:60px}
+.travel_story ul::after{content:''; display:block; clear:both}
+.travel_story ul li{opacity:0; float:left; transform:rotate(-10deg); transform-origin:50% 0px; width:calc(100%/3 - 12.1px); margin-left:18px}
+.travel_story ul li:first-child{margin-left:0}
+.travel_story ul li a{display:block}
+.travel_story ul li a .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:100%; border-radius:12px 12px 0 0}
+.travel_story ul li a .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.travel_story ul li a .txt{padding:30px; border:1px solid #ddd; border-radius:0 0 12px 12px; transition:all 0.35s ease}
+.travel_story ul li:hover a .txt{border:1px solid #1f9970}
+.travel_story ul li a .txt p{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#333; font-size:20px; font-family:'NSB'; letter-spacing:-0.030em}
+.travel_story ul li a .txt span{display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin-top:20px; color:#555; font-size:16px; line-height:1.5}
+.travel_story ul li a .txt b{display:inline-block; padding-left:22px; margin-top:15px; background:url(../../../images/main/recommend_loc.png) no-repeat 0 0; color:#1f9970; font-size:14px; font-weight:500; line-height:16px}
+.travel_story .more{position:absolute; top:10px; right:0; padding-top:2px; padding-right:28px; color:#555; font-size:16px}
+.travel_story .more::before{content:''; position:absolute; top:50%; right:0; width:16px; height:2px; margin-top:-1px; background:#555}
+.travel_story .more::after{content:''; position:absolute; top:50%; right:7px; width:2px; height:16px; margin-top:-8px; background:#555}
+.travel_story.open ul li{opacity:1; transform:rotate(0deg); transition:all 0.7s 0.8s ease-in-out}
+.travel_story.open ul li:nth-child(2){transition-delay:0.9s}
+.travel_story.open ul li:nth-child(3){transition-delay:1s}
+
+/* 농촌여행정보 */
+.travel_info{padding:80px 0 110px 0; background:url(../../../images/main/travel_info_bg.jpg) no-repeat center 0}
+.travel_info .inner{width:1200px; margin:0 auto}
+.travel_info .tit{text-align:center}
+.travel_info .tit h2{display:inline-block; padding:0 55px 0 15px; color:#333; font-size:40px; font-family:'NS'; font-weight:500; letter-spacing:-0.030em; line-height:42px}
+.travel_info .tit h2 b{font-family:'NSB'}
+.travel_info .left{float:left; width:400px}
+.travel_info .left .tit h2{background:url(../../../images/main/festival.png) no-repeat right 2px}
+.travel_info .left .slide{margin-top:60px}
+.travel_info .left .slide .bx-viewport{overflow:hidden; height:325px !important; border-radius:12px; box-shadow:0 0 12px 4px rgba(0, 0, 0, 0.15)}
+.travel_info .left .slide .bx-controls{position:absolute; bottom:-35px; left:50%; width:140px; height:20px; margin-left:-70px}
+.travel_info .left .slide .bx-controls-direction a{top:2px; width:10px; height:16px; background:url(../../../images/main/heritage_slide_set.png) no-repeat 0 0; font-size:0px}
+.travel_info .left .slide .bx-controls-direction .bx-prev{left:0}
+.travel_info .left .slide .bx-controls-direction .bx-next{right:0; background-position:-10px 0}
+.travel_info .left .slide .bx-controls-direction a:hover{background-position-y:-16px}
+.travel_info .left .slide .bx-controls .bx-pager{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:16px; color:#959595; font-size:16px; font-family:'NBG'; font-weight:500}
+.travel_info .left .slide .bx-controls .bx-pager::first-letter{color:#1f9970}
+.travel_info .left ul li a{display:block}
+.travel_info .left ul li a .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:69.75%}
+.travel_info .left ul li a .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%}
+.travel_info .left ul li a .txt{padding:10px 30px; background:#fff; border:1px solid #ddd; border-radius:0 0 12px 12px}
+.travel_info .left ul li a .txt p{overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#333; font-size:20px; font-family:'NSB'; letter-spacing:-0.030em}
+.travel_info .left ul li a .txt span{display:block; margin-top:20px; color:#555; font-size:16px; line-height:1.5}
+.travel_info .left ul li a .txt b{display:inline-block; padding-left:22px; margin-top:15px; background:url(../../../images/main/recommend_loc.png) no-repeat 0 0; color:#1f9970; font-size:14px; font-weight:500; line-height:16px}
+.travel_info .right{float:right; width:760px}
+.travel_info .right .tit h2{background:url(../../../images/main/event.png) no-repeat right 2px}
+.travel_info .right ul{margin-top:60px}
+.travel_info .right ul::after{content:''; display:block; clear:both}
+.travel_info .right ul li{float:left; width:calc(50% - 18px); margin-left:36px; border-radius:8px; box-shadow:0 0 12px 4px rgba(0, 0, 0, 0.15)}
+.travel_info .right ul li:nth-child(2n-1){margin-left:0}
+.travel_info .right ul li:nth-child(n+3){margin-top:36px}
+.travel_info .right ul li a{display:block}
+.travel_info .right ul li .img{overflow:hidden; position:relative; width:100%; height:0; padding-top:45%; border-radius:8px}
+.travel_info .right ul li .img img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:100%}
+.travel_info .right ul li .img span{position:absolute; top:8px; right:8px; width:96px; padding:8px 0; color:#fff; font-size:14px; text-align:center; border-radius:16px; line-height:16px; box-sizing:border-box; transition:top 0.35s}
+.travel_info .right ul li .img span::before{content:attr(value); opacity:0; position:absolute; top:100%; left:50%; transform:translateX(-50%); width:100%; padding:75px 0; background:rgba(0, 0, 0, 0.7); color:#fff; font-size:24px; text-align:center}
+.travel_info .right ul li .img span.v1{background-color:#1f9999}
+.travel_info .right ul li .img span.v2{background-color:#3d6dcc}
+.travel_info .right ul li .img span.v3{background-color:#2996cc}
+.travel_info .right ul li .img span.v4{background-color:#cc3d3d}
+.travel_info .right ul li .img span.v5{background-color:#8e3dcc}
+.travel_info .right ul li .img span.v6{background-color:#ff0101}
+.travel_info .right ul li:hover .img span{top:-100%; right:0; width:100%; height:100%; background:none; color:transparent}
+.travel_info .right ul li:hover .img span::before{top:100%; opacity:1; transition:top 0.35s cubic-bezier(0.85, 0, 0.5, 1)}
+
+/* 농촌여행의아름다운 기억 */
+.memory{padding:80px 0}
+.memory .inner{position:relative; width:1200px; margin:0 auto}
+.memory .tit{width:1200px; margin:0 auto; text-align:center}
+.memory .tit h2{display:inline-block; padding:0 60px; background:url(../../../images/main/memory.png) no-repeat right 2px; color:#333; font-size:40px; font-family:'NS'; font-weight:500; letter-spacing:-0.030em; line-height:42px}
+.memory .tit h2 b{font-family:'NSB'}
+.memory .slide{margin-top:60px}
+.memory .slide .bx-wrapper{/* max-width:100% !important */}
+.memory ul{}
+.memory ul li{width:300px}
+.memory ul li a{display:block; overflow:hidden; position:relative; width:300px; height:0; padding-top:100%}
+.memory ul li a:hover::after{content:''; position:absolute; top:0; left:0; z-index:1; width:100%; height:100%; background:url(../../../images/main/memory_hover.png) no-repeat center center rgba(41, 150, 204, 0.5)}
+.memory ul li.four{overflow:hidden}
+.memory ul li.four a{float:left; width:50%; padding-top:50%;}
+.memory ul li a::before{content:''; position:absolute; top:0; bottom:0; left:0; right:0; z-index:1; border:1px solid #fff}
+.memory ul li.four a:hover::after{background-size:40px 40px}
+.memory ul li a img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); height:100%}
+.memory .more{position:absolute; top:10px; right:0; padding-top:2px; padding-right:28px; color:#555; font-size:16px}
+.memory .more::before{content:''; position:absolute; top:50%; right:0; width:16px; height:2px; margin-top:-1px; background:#555}
+.memory .more::after{content:''; position:absolute; top:50%; right:7px; width:2px; height:16px; margin-top:-8px; background:#555}
+
+/* 메인 네비게이션 메뉴 */
+.remote_control{position:fixed; top:28%; right:22px; padding-bottom:73px; background:url(../../../images/main/scroll_ico.png) center bottom no-repeat; z-index:3}
+.remote_control ul li{display:table; margin-bottom:10px}
+.remote_control ul li a{display:table-cell; width:60px; height:60px; border-radius:50% 50%; background-color:#63676f; font-size:12px; line-height:15px; color:#fff; transition:color, background 0.3s; text-align:center; vertical-align:middle}
+.remote_control ul li.active a{background:#028396; color:#fff}
